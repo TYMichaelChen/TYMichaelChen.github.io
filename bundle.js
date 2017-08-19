@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a464fa22c42921e3ceff"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1f475c6ed7b1e2386ab6"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -10456,7 +10456,7 @@ class Home extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'h3',
         null,
-        'ReactJS Starter Kit'
+        'Michael Chen\'s Portfolio Site'
       )
     );
   }
