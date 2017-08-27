@@ -2,7 +2,7 @@
 
 .home-container {
   background-color: $mainColor;
-  padding: 40px 40px 0 40px;
+  padding: 50px 40px 0 40px;
   .picture-box {
     text-align: right;
     .main-picture {
@@ -12,10 +12,10 @@
     }
   }
   .text-box {
-    margin-top: 50px;
+    margin-top: 80px;
     color: $lightColor;
     h1 {
-      font-family: 'Source Serif Pro', serif;
+      @extend .serif-txt;
       font-weight: 600;
       line-height: 0.8;
     }

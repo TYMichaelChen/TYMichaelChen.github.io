@@ -1,0 +1,19 @@
+@import '../../static/css/main.scss';
+
+.project-container {
+  background-color: $darkColor;
+  padding: 40px;
+  color: $lightColor;
+  .text-box {
+    width: 65%;
+    margin: 0 auto;
+  }
+  h1 {
+    @extend .serif-txt;
+    text-align: center;
+  }
+  h2 {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}
