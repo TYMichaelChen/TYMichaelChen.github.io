@@ -1,0 +1,21 @@
+@import "../../static/css/variables.scss";
+
+.navbar {
+  .navbar-brand {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: $darkColor;
+    .light-txt {
+      font-family: 'Source Serif Pro', serif;
+    }
+  }
+  li {
+    margin:0 20px;
+    a {
+      color: $darkColor;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}

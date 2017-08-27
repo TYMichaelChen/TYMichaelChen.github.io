@@ -1,5 +1,8 @@
 body {
-  width: 100%; }
+  width: 100%;
+  font-family: 'Muli', sans-serif;
+}
 
 h3 {
-  color: #2ebc67; }
+  color: #2ebc67;
+}
