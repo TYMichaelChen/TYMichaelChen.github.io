@@ -20,6 +20,11 @@ class Home extends React.Component {
               During my time at Northwestern, I led EPIC, the entrepreneurship student group, and created programs such as
               WildHacks, an intercollegiate hackathon, and Project Pitch, an entrepreneurship development program.
             </h3>
+            <div className="social-box">
+              <a href="mailto:miketychen@gmail.com" target="_blank"><span className="glyph-icon flaticon-email5"></span></a>
+              <a href="http://www.linkedin.com/in/miketychen" target="_blank"><span className="glyph-icon flaticon-linkedin11"></span></a>
+              <a href="http://www.github.com/miketychen" target="_blank"><span className="glyph-icon flaticon-github17"></span></a>
+            </div>
           </div>
         </div>
       </div>
