@@ -1,4 +1,5 @@
 import React from 'react';
+import Experience from './experience/experience.jsx';
 import Home from './home/home.jsx';
 import Nav from './nav/nav.jsx';
 import Project from './project/project.jsx';
@@ -14,6 +15,7 @@ class App extends React.Component {
         <Nav />
         <Home />
         <Project />
+        <Experience />
       </div>
     );
   }

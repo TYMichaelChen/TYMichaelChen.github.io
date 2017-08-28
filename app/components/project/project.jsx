@@ -14,6 +14,7 @@ class Project extends React.Component {
             During my time at Northwestern, I led EPIC, the entrepreneurship student group, and created programs such as
             WildHacks, an intercollegiate hackathon, and Project Pitch, an entrepreneurship development program.
           </h2>
+          <h2 className="filter-title">FILTER BY LANGUAGE:</h2>
         </div>
         <div className="filter-box">
         </div>
