@@ -1,5 +1,11 @@
 import React from 'react';
 import _ from 'lodash';
+import Zanbato from '../../static/images/zanbato.png';
+import IBM from '../../static/images/ibm.png';
+import HealthEngine from '../../static/images/healthengine.png';
+import Insights from '../../static/images/4cinsights.jpg';
+import MDAnderson from '../../static/images/mdanderson.png';
+import Northwestern from '../../static/images/northwestern.png';
 import './experience.scss';
 
 
@@ -10,53 +16,58 @@ class Experience extends React.Component {
         company: "Zanbato",
         title: "Software Engineer (Python)",
         description: "Created a computational pipeline  that sequenced human genetic data and Created a computational pipeline  that sequenced human genetic data and Created a computational pipeline",
-        image: "zanbato.png",
+        image: Zanbato,
+        imgClass: 'zanbato',
       },
       {
         company: "IBM",
         title: "Software Engineer (Python)",
         description: "Created a computational pipeline  that sequenced human genetic data and Created a computational pipeline  that sequenced human genetic data and Created a computational pipeline",
-        image: "zanbato.png",
+        image: IBM,
+        imgClass: 'ibm',
       },
       {
         company: "HealthEngine",
         title: "Software Engineer (Python)",
         description: "Created a computational pipeline  that sequenced human genetic data and Created a computational pipeline  that sequenced human genetic data and Created a computational pipeline",
-        image: "zanbato.png",
+        image: HealthEngine,
+        imgClass: 'healthengine',
       },
       {
         company: "4C Insights",
         title: "Software Engineer (Python)",
         description: "Created a computational pipeline  that sequenced human genetic data and Created a computational pipeline  that sequenced human genetic data and Created a computational pipeline",
-        image: "zanbato.png",
+        image: Insights,
+        imgClass: 'insights',
       },
       {
         company: "MD Anderson Cancer Center",
         title: "Software Engineer (Python)",
         description: "Created a computational pipeline  that sequenced human genetic data and Created a computational pipeline  that sequenced human genetic data and Created a computational pipeline",
-        image: "zanbato.png",
+        image: MDAnderson,
+        imgClass: 'mdanderson',
       },
       {
         company: "Northwestern University",
         title: "Software Engineer (Python)",
         description: "Created a computational pipeline  that sequenced human genetic data and Created a computational pipeline  that sequenced human genetic data and Created a computational pipeline",
-        image: "zanbato.png",
+        image: Northwestern,
+        imgClass: 'northwestern',
       },
     ];
   }
   get experienceComponents() {
     const experiencesObj = this.experiences;
-    const root = "../../../static/images/";
     const experiences = _.map(experiencesObj, (experience, idx) => {
       const verticalLine = idx === experiencesObj.length - 1 ?
         null : <div className="vertical-line" />;
-      console.log(root+experience.image);
-      const imgSrc = root + experience.image;
       return (
         <div className="row experience-row" key={experience.company}>
           <div className="col-md-3 timeline">
             <div className="img-box">
-              <img src={imgSrc} />
+              <div className="img-bg">
+                <img className={`${experience.imgClass}-img`} src={experience.image} />
+              </div>
             </div>
             {verticalLine}
           </div>

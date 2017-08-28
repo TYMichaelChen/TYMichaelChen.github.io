@@ -25,20 +25,61 @@
     margin: 0 auto;
     .experience-row {
       .timeline {
-        background-color: black;
         .vertical-line {
-          background-color: green;
+          background-color: $sysGray1;
           height: 60px;
           margin: -1px auto 0 auto;
-          width: 18px;
+          width: 15px;
         }
       }
       .img-box {
-        background-color: green;
+        background-color: $sysGray1;
         border-radius: 50%;
-        height: 150px;
+        height: 190px;
         margin: -1px auto 0 auto;
-        width: 150px;
+        width: 190px;
+        .img-bg {
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+          margin: 1px auto;
+          border: 15px solid $sysGray1;
+          background: $lightColor;
+        }
+        .company-img {
+          width: 140px;
+          margin: 0 auto 0 10px;
+        }
+        .zanbato-img {
+          @extend .company-img;
+          margin-top: 28%;
+        }
+        .ibm-img {
+          @extend .company-img;
+          margin-top: 18%;
+        }
+        .healthengine-img {
+          width: 110px;
+          height: 110px;
+          margin: 14% auto auto 26px;
+        }
+        .insights-img {
+          @extend .company-img;
+          width: 125px;
+          margin-top: 11%;
+          margin-left: 18px;
+        }
+        .mdanderson-img {
+          @extend .company-img;
+          margin-top: 34%;
+        }
+        .northwestern-img {
+          @extend .company-img;
+          width: calc(100% - 15px);
+          border-radius: 50%;
+          margin-top: 7px;
+          margin-left: 7px;
+        }
       }
       h1 {
         @extend .serif-txt;

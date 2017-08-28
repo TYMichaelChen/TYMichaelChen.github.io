@@ -10,7 +10,7 @@ const DownArrow = () => (
 );
 
 const Email = () => (
-  <svg x="px" y="0px" width="35.318px" height="35.318px" viewBox="0 0 14 14">
+  <svg x="0px" y="0px" width="35.318px" height="35.318px" viewBox="0 0 14 14">
   <g>
     <g>
       <path d="M7,9L5.268,7.484l-4.952,4.245C0.496,11.896,0.739,12,1.007,12h11.986c0.267,0,0.509-0.104,0.688-0.271L8.732,7.484L7,9z"/>
