@@ -1,0 +1,35 @@
+@import '../../static/css/main.scss';
+
+.footer-container {
+  background-color: $mainColor;
+  padding: 30px 80px;
+  .text-box {
+    color: $lightColor;
+    h1 {
+      @extend .serif-txt;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 0.8;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 0.8;
+    }
+  }
+  .social-box {
+    margin-top: 25px;
+    text-align: right;
+    .icon {
+      margin: 0 25px;
+      * {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .email-icon * {
+      transform: translate(0px, 0.5px);
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import MainPicture from '../../static/images/main-picture.png';
-import { DownArrow, Email, Github, LinkedIn } from '../../static/js/svgs.js';
+import { DownArrow, Email, Github, LinkedIn, Resume } from '../../static/js/svgs.js';
 import './home.scss';
 
 
@@ -25,6 +25,7 @@ class Home extends React.Component {
               <a href="http://www.github.com/miketychen" target="_blank"><span className="icon"><Github /></span></a>
               <a href="mailto:miketychen@gmail.com" target="_blank"><span className="icon email-icon"><Email /></span></a>
               <a href="http://www.linkedin.com/in/miketychen" target="_blank"><span className="icon"><LinkedIn /></span></a>
+              <a href="http://www.linkedin.com/in/miketychen" target="_blank"><span className="icon"><Resume /></span></a>
             </div>
             <div className="down-box">
               <span className="icon"><DownArrow /></span>
