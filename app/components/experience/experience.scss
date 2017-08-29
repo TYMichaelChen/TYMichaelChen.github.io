@@ -5,7 +5,7 @@
   padding: 40px;
   color: $lightColor;
   .text-box {
-    width: 75%;
+    width: 65%;
     margin: 0 auto;
     h1 {
       @extend .serif-txt;
@@ -22,7 +22,7 @@
   }
   .experiences-box {
     width: 80%;
-    margin: 0 auto;
+    margin: 50px auto;
     .experience-row {
       .timeline {
         .vertical-line {

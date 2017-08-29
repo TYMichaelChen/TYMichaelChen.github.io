@@ -9,20 +9,21 @@
       @extend .serif-txt;
       font-size: 48px;
       font-weight: 600;
-      line-height: 0.8;
+      line-height: 0.6;
       text-transform: uppercase;
     }
     h2 {
       font-size: 16px;
       font-weight: 300;
-      line-height: 0.8;
+      line-height: 0.6;
     }
   }
   .social-box {
-    margin-top: 25px;
+    margin-top: 28px;
     text-align: right;
     .icon {
       margin: 0 25px;
+      opacity: 0.5;
       * {
         width: 40px;
         height: 40px;
