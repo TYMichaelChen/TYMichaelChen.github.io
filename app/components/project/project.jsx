@@ -2,11 +2,77 @@ import React from 'react';
 import './project.scss';
 
 
+// Project Images
+import Packhire from '../../static/images/projects/packhire.jpg';
+import SEAM from '../../static/images/projects/seam.jpg';
+import Twitter from '../../static/images/projects/twitter.jpg';
+import Frontend from '../../static/images/projects/front.jpg';
+import Data from '../../static/images/projects/data.jpg';
+
+
 class Project extends React.Component {
+  get projects() {
+    return [
+      {
+        name: "PackHire",
+        role: "Software Engineer (Full Stack)",
+        technology: ['Ruby on Rails', 'Javascript', 'HTML5', 'CSS3', 'PostgreSQL', 'SASS'],
+        image: Packhire,
+        className: 'packhire',
+      },
+      {
+        name: "SEAM",
+        role: "Software Engineer (Full Stack)",
+        technology: ['Ruby on Rails', 'Javascript', 'HTML5', 'CSS3', 'PostgreSQL', 'SASS'],
+        image: SEAM,
+        className: 'seam',
+      },
+      {
+        name: "Data Science",
+        role: "Software Engineer (Full Stack)",
+        technology: ['Ruby on Rails', 'Javascript', 'HTML5', 'CSS3', 'PostgreSQL', 'SASS'],
+        image: Data,
+        className: 'data',
+      },
+      {
+        name: "Frontend",
+        role: "Software Engineer (Full Stack)",
+        technology: ['Ruby on Rails', 'Javascript', 'HTML5', 'CSS3', 'PostgreSQL', 'SASS'],
+        image: Frontend,
+        className: 'frontend',
+      },
+      {
+        name: "Twitter Filter",
+        role: "Software Engineer (Full Stack)",
+        technology: ['Ruby on Rails', 'Javascript', 'HTML5', 'CSS3', 'PostgreSQL', 'SASS'],
+        image: Twitter,
+        className: 'twitter',
+      },
+    ];
+  }
+  get projectsComponent() {
+    const projectsObj = this.projects;
+    const projects = _.map(projectsObj, (project) => (
+      <div className={`row project-row ${project.className}-row`} key={project.name}>
+        <div className="col-md-3 img-box">
+          <img className="project-img" src={project.image} />
+        </div>
+        <div className="col-md-9 text-box">
+          <h1>{project.name}</h1>
+          <h2>{project.role}</h2>
+        </div>
+      </div>
+    ));
+    return  (
+      <div>
+        {projects}
+      </div>
+    );
+  }
   render() {
     return (
       <div className="project-container">
-        <div className="text-box">
+        <div className="overview-box">
           <h1>MY PROJECTS</h1>
           <h2>
             Im a software engineer working at Zanbato, creating a stock exchange for private markets (the first of its kind
@@ -14,10 +80,10 @@ class Project extends React.Component {
             During my time at Northwestern, I led EPIC, the entrepreneurship student group, and created programs such as
             WildHacks, an intercollegiate hackathon, and Project Pitch, an entrepreneurship development program.
           </h2>
-          <h2 className="filter-title">FILTER BY LANGUAGE:</h2>
         </div>
         <div className="filter-box">
         </div>
+        {this.projectsComponent}
       </div>
     );
   }

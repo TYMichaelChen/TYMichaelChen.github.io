@@ -2,12 +2,12 @@
 
 .footer-container {
   background-color: $mainColor;
-  padding: 30px 80px;
+  padding: 30px 60px;
   .text-box {
     color: $lightColor;
     h1 {
       @extend .serif-txt;
-      font-size: 48px;
+      font-size: 45px;
       font-weight: 600;
       line-height: 0.6;
       text-transform: uppercase;

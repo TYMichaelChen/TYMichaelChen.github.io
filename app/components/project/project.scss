@@ -2,22 +2,65 @@
 
 .project-container {
   background-color: $darkColor;
-  padding: 40px;
   color: $lightColor;
-  .text-box {
+  padding-top: 20px;
+  .overview-box {
     width: 65%;
     margin: 0 auto;
+    padding: 20px;
+    h1 {
+      @extend .serif-txt;
+      text-align: center;
+    }
+    h2 {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+    .filter-title {
+      font-size: 700;
+      text-align: center;
+    }
   }
-  h1 {
-    @extend .serif-txt;
-    text-align: center;
+  .project-row {
+    width: 100%;
+    padding: 20px 40px;
+    margin: 0;
+    .img-box {
+      text-align: right;
+      .project-img {
+        width: 150px;
+      }
+    }
+    .text-box {
+      h1 {
+        @extend .serif-txt;
+        font-size: 22px;
+        line-height: 0.5;
+        text-transform: uppercase;
+      }
+      h2 {
+        font-size: 16px;
+        line-height: 0.5;
+        font-weight: 300;
+      }
+    }
   }
-  h2 {
-    font-size: 16px;
-    line-height: 1.8;
+  .packhire-row {
+    background-color: $packhireColor;
   }
-  .filter-title {
-    font-size: 700;
-    text-align: center;
+  .packhire-row:hover {
+    background-color: $packhireColor;
+  }
+  .seam-row {
+    background-color: $seamColor;
+  }
+  .data-row {
+    background-color: $dataColor;
+  }
+  .frontend-row {
+    background-color: $frontendColor;
+  }
+  .twitter-row {
+    background-color: $twitterColor;
   }
 }
