@@ -43,24 +43,65 @@
         line-height: 0.5;
         font-weight: 300;
       }
+      .tag-container {
+        margin-top: 20px;
+        .tag {
+          background-color: $javascript;
+          border-radius: 5px;
+          font-size: 12px;
+          margin-right: 10px;
+          padding: 6px 10px;
+        }
+        .Javascript-tag {
+          @extend .tag;
+          background-color: $javascript
+        }
+        .Ruby-tag {
+          @extend .tag;
+          background-color: $ruby;
+        }
+      }
     }
   }
+  .transition-row {
+    cursor: pointer;
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+  }
   .packhire-row {
+    @extend .transition-row;
     background-color: $packhireColor;
   }
   .packhire-row:hover {
-    background-color: $packhireColor;
+    background-color: $packhireColor1;
   }
   .seam-row {
+    @extend .transition-row;
     background-color: $seamColor;
   }
+  .seam-row:hover {
+    background-color: $seamColor1;
+  }
   .data-row {
+    @extend .transition-row;
     background-color: $dataColor;
   }
+  .data-row:hover {
+    background-color: $dataColor1;
+  }
   .frontend-row {
+    @extend .transition-row;
     background-color: $frontendColor;
   }
+  .frontend-row:hover {
+    background-color: $frontendColor1;
+  }
   .twitter-row {
+    @extend .transition-row;
     background-color: $twitterColor;
+  }
+  .twitter-row:hover {
+    background-color: $twitterColor1;
   }
 }

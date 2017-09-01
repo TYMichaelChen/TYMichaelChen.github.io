@@ -16,35 +16,35 @@ class Project extends React.Component {
       {
         name: "PackHire",
         role: "Software Engineer (Full Stack)",
-        technology: ['Ruby on Rails', 'Javascript', 'HTML5', 'CSS3', 'PostgreSQL', 'SASS'],
+        technology: ['Ruby', 'Javascript', 'HTML5', 'CSS3', 'PostgreSQL', 'SASS'],
         image: Packhire,
         className: 'packhire',
       },
       {
         name: "SEAM",
         role: "Software Engineer (Full Stack)",
-        technology: ['Ruby on Rails', 'Javascript', 'HTML5', 'CSS3', 'PostgreSQL', 'SASS'],
+        technology: ['Ruby', 'Javascript', 'HTML5', 'CSS3', 'PostgreSQL', 'SASS'],
         image: SEAM,
         className: 'seam',
       },
       {
         name: "Data Science",
         role: "Software Engineer (Full Stack)",
-        technology: ['Ruby on Rails', 'Javascript', 'HTML5', 'CSS3', 'PostgreSQL', 'SASS'],
+        technology: ['Ruby', 'Javascript', 'HTML5', 'CSS3', 'PostgreSQL', 'SASS'],
         image: Data,
         className: 'data',
       },
       {
         name: "Frontend",
         role: "Software Engineer (Full Stack)",
-        technology: ['Ruby on Rails', 'Javascript', 'HTML5', 'CSS3', 'PostgreSQL', 'SASS'],
+        technology: ['Ruby', 'Javascript', 'HTML5', 'CSS3', 'PostgreSQL', 'SASS'],
         image: Frontend,
         className: 'frontend',
       },
       {
         name: "Twitter Filter",
         role: "Software Engineer (Full Stack)",
-        technology: ['Ruby on Rails', 'Javascript', 'HTML5', 'CSS3', 'PostgreSQL', 'SASS'],
+        technology: ['Ruby', 'Javascript', 'HTML5', 'CSS3', 'PostgreSQL', 'SASS'],
         image: Twitter,
         className: 'twitter',
       },
@@ -52,17 +52,25 @@ class Project extends React.Component {
   }
   get projectsComponent() {
     const projectsObj = this.projects;
-    const projects = _.map(projectsObj, (project) => (
-      <div className={`row project-row ${project.className}-row`} key={project.name}>
-        <div className="col-md-3 img-box">
-          <img className="project-img" src={project.image} />
+    const projects = _.map(projectsObj, (project) => {
+      const tags = _.map(project.technology, (tech) => (
+        <span className={`${tech}-tag`}>{tech}</span>
+      ));
+      return (
+        <div className={`row project-row ${project.className}-row`} key={project.name}>
+          <div className="col-md-3 img-box">
+            <img className="project-img" src={project.image} />
+          </div>
+          <div className="col-md-9 text-box">
+            <h1>{project.name}</h1>
+            <h2>{project.role}</h2>
+            <div className="tag-container">
+              {tags}
+            </div>
+          </div>
         </div>
-        <div className="col-md-9 text-box">
-          <h1>{project.name}</h1>
-          <h2>{project.role}</h2>
-        </div>
-      </div>
-    ));
+      );
+    });
     return  (
       <div>
         {projects}
