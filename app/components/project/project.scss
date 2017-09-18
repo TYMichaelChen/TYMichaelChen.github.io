@@ -23,12 +23,12 @@
   }
   .project-row {
     width: 100%;
-    padding: 20px 40px;
+    padding: 40px 40px;
     margin: 0;
     .img-box {
       text-align: right;
       .project-img {
-        width: 150px;
+        width: 200px;
       }
     }
     .text-box {
@@ -54,13 +54,37 @@
         }
         .Javascript-tag {
           @extend .tag;
-          background-color: $javascript
+          background-color: $javascript;
         }
         .Ruby-tag {
           @extend .tag;
           background-color: $ruby;
         }
+        .HTML5-tag {
+          @extend .tag;
+          background-color: $html;
+        }
+        .CSS3-tag {
+          @extend .tag;
+          background-color: $css;
+        }
+        .PostgreSQL-tag {
+          @extend .tag;
+          background-color: $postgresql;
+        }
+        .SASS-tag {
+          @extend .tag;
+          background-color: $sass;
+        }
       }
+    }
+    .details-button {
+      margin-top: 40px;
+      padding: 10px 150px;
+      border: none;
+    }
+    .packhire-btn {
+      background-color: $packhireColor2;
     }
   }
   .transition-row {

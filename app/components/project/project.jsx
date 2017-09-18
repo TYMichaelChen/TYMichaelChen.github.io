@@ -67,6 +67,9 @@ class Project extends React.Component {
             <div className="tag-container">
               {tags}
             </div>
+            <button className={`details-button ${project.className}-btn`}>
+              VIEW DETAILS
+            </button>
           </div>
         </div>
       );
