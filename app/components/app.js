@@ -1,25 +1,36 @@
 import React from 'react';
-import Experience from './experience/experience.jsx';
-import Home from './home/home.jsx';
-import Nav from './nav/nav.jsx';
-import Project from './project/project.jsx';
-import Footer from './footer/footer.jsx';
+
+// import HomePage from './pages/HomePage.jsx';
+// import ProjectPage from './pages/ProjectPage.jsx';
+
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 
-import '../static/css/main.scss';
 
+const PrimaryLayout = () => (
+  <div className="primary-layout">
+    <header>
+      Our React Router 4 App
+    </header>
+    <main>
+      <Switch>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/users" component={UsersPage} />
+      </Switch>
+    </main>
+  </div>
+)
+
+const HomePage =() => <div>Home Page</div>
+const UsersPage = () => <div>Users Page</div>
 
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <Nav />
-        <Home />
-        <Project />
-        <Experience />
-        <Footer />
-      </div>
-    );
+      <BrowserRouter>
+        <PrimaryLayout />
+      </BrowserRouter>
+    )
   }
 };
 

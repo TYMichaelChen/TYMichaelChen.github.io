@@ -1,5 +1,6 @@
 import React from 'react';
 import './project.scss';
+import Description from './description/description.jsx';
 
 
 // Project Images
@@ -85,6 +86,7 @@ class Project extends React.Component {
       <div className="project-container">
         <div className="overview-box">
           <h1>MY PROJECTS</h1>
+          <Description />
           <h2>
             Im a software engineer working at Zanbato, creating a stock exchange for private markets (the first of its kind
             Alternative Trading System). I graduated from Northwestern University in 2015 studying Biological Sciences and Computer Science.

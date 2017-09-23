@@ -14,7 +14,10 @@
     "file-loader": "^0.11.2",
     "lodash": "^4.17.4",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scroll": "^1.5.2"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
