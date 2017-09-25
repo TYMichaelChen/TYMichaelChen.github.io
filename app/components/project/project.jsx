@@ -1,7 +1,5 @@
 import React from 'react';
 import './project.scss';
-import Description from './description/description.jsx';
-
 
 // Project Images
 import Packhire from '../../static/images/projects/packhire.jpg';
@@ -55,7 +53,7 @@ class Project extends React.Component {
     const projectsObj = this.projects;
     const projects = _.map(projectsObj, (project) => {
       const tags = _.map(project.technology, (tech) => (
-        <span className={`${tech}-tag`}>{tech}</span>
+        <span key={tech} className={`${tech}-tag`}>{tech}</span>
       ));
       return (
         <div className={`row project-row ${project.className}-row`} key={project.name}>
@@ -86,7 +84,6 @@ class Project extends React.Component {
       <div className="project-container">
         <div className="overview-box">
           <h1>MY PROJECTS</h1>
-          <Description />
           <h2>
             Im a software engineer working at Zanbato, creating a stock exchange for private markets (the first of its kind
             Alternative Trading System). I graduated from Northwestern University in 2015 studying Biological Sciences and Computer Science.

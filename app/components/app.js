@@ -1,28 +1,20 @@
 import React from 'react';
 
-// import HomePage from './pages/HomePage.jsx';
-// import ProjectPage from './pages/ProjectPage.jsx';
+import HomePage from './pages/HomePage.jsx';
+import ProjectPage from './pages/ProjectPage.jsx';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 
 
 const PrimaryLayout = () => (
-  <div className="primary-layout">
-    <header>
-      Our React Router 4 App
-    </header>
     <main>
       <Switch>
-        <Route path="/" exact component={HomePage} />
-        <Route path="/users" component={UsersPage} />
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/project" component={ProjectPage} />
       </Switch>
     </main>
-  </div>
 )
-
-const HomePage =() => <div>Home Page</div>
-const UsersPage = () => <div>Users Page</div>
 
 class App extends React.Component {
   render() {

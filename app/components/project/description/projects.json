@@ -1,8 +1,32 @@
 {
-  "Braindump" : {
+  "braindump" : {
       "name": "Braindump"
   },
-  "PackHire" : {
-      "name": "PackHire"
+  "packhire" : {
+      "name": "PackHire",
+      "description": "PackHire provides you with platform where you can turn people in your network into the best recruiters for your company. Most best hires come from referrals from within a trusted network. PackHire was challenging because the tool have to be simple, intuitive and sticky, while maintaining optiminal functionality. My co-worker and I received small angel funding and were able to do it all and had a fully functional platform up in just two weeks.",
+      "link": "http://www.packhire.com",
+      "mainPicture": "images/projects/packhire/pack-0.jpg",
+      "features": [
+        "Social Media Integration (allowing users to easily share on all of their social media)",
+        "Statistical analysis of vital data points on how the job is doing in the network.",
+        "Individualized analytics tracking for employees to follow their progress and impact on the job campaign.",
+        "Algorithmic scoring of candidates based on network graph",
+        "Campaign management system for HR to edit their job listing campaign"
+      ],
+      "featuresPictures": [
+        "images/projects/packhire/pack-2.jpg",
+        "images/projects/packhire/pack-3.jpg"
+      ],
+      "technology": [
+        "Front-End: HTML, CSS, Javascript, Gulp, & JQuery",
+        "Back-End: Ruby on Rails & PostgreSQL",
+        "Hosting: Heroku",
+        "Version Control: GitHub"
+      ],
+      "techPictures": [
+        "images/projects/packhire/pack-6.jpg",
+        "images/projects/packhire/pack-4.jpg"
+      ]
   }
 }

@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var HTMLWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
   template: __dirname + '/app/index.html',
@@ -51,6 +52,9 @@ module.exports = {
     new ExtractTextPlugin({
         filename: 'css/main.css',
         allChunks: true
-    })
+    }),
+    new CopyWebpackPlugin([
+        {from:'app/static/images',to:'images'}
+    ]),
   ]
 };
