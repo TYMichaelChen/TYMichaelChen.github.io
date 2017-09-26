@@ -5,7 +5,7 @@
   padding-top: 80px;
   width: 100%;
   a {
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 50px;
     color: $mainColor;
     cursor: pointer;
@@ -13,7 +13,7 @@
     text-align: center;
   }
   a:hover {
-    color: $mainColor1;
+    opacity: 0.75;
   }
   .overview-box {
     width: 60%;
@@ -41,19 +41,21 @@
   }
   .text-box {
     width: 60%;
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
     h1 {
       text-align: center;
       text-transform: capitalize;
       font-weight: 700;
-      font-size: 25px;
+      font-size: 22px;
       color: $mainColor;
     }
-    h2 {
-      font-size: 22px;
-    }
-    li {
-      font-size: 16px;
+    .text {
+      h2 {
+        font-size: 18px;
+      }
+      li {
+        font-size: 16px;
+      }
     }
     .feature-images-box {
       margin-top: 60px;
@@ -65,7 +67,16 @@
   }
   .footer-box {
     width: 60%;
-    margin: 50px auto;
+    margin: 10px auto 40px auto;
     text-align: center;
+    a {
+      padding-top: 30px;
+      display: block;
+    }
+    a:last-child {
+      padding-top: 60px;
+      font-size: 22px;
+      font-weight: 700;
+    }
   }
 }

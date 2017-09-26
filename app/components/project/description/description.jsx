@@ -7,11 +7,21 @@ import Projects from './projects.json';
 class Description extends React.Component {
   get features() {
     const project = this.props.project;
-    return _.map(project.features, (feature, idx) => {
+    return _.map(project.features, (features, project) => {
+      const featuresElem = _.map(features, (feature, idx) => {
+        return (
+          <li key={idx}>{feature}</li>
+        );
+      })
       return (
-        <ul key={idx}><li>{feature}</li></ul>
+        <div className="text">
+          <h2>{project} has the following features:</h2>
+          <ul>
+            {featuresElem}
+          </ul>
+        </div>
       );
-    })
+    });
   }
   get featuresPictures() {
     const project = this.props.project;
@@ -26,9 +36,19 @@ class Description extends React.Component {
   }
   get technology() {
     const project = this.props.project;
-    return _.map(project.technology, (technology, idx) => {
+    return _.map(project.technology, (technology, project) => {
+      const techElem = _.map(technology, (tech, idx) => {
+        return (
+          <li key={idx}>{tech}</li>
+        );
+      })
       return (
-        <ul key={idx}><li>{technology}</li></ul>
+        <div className="text">
+          <h2>I built {project} using:</h2>
+          <ul>
+            {techElem}
+          </ul>
+        </div>
       );
     });
   }
@@ -45,8 +65,17 @@ class Description extends React.Component {
   }
   get appLink() {
     const project = this.props.project;
+    if(project.link) {
+      return (
+        <a style={{color:project.color}} href={project.link} target="_blank">Visit the {project.name} App</a>
+      );
+    }
+    return null;
+  }
+  get backLink() {
+    const project = this.props.project;
     return (
-        <a href={project.link} target="_blank">Visit the {project.name} App</a>
+        <a style={{color:project.color}} href="/#projects">Back to Other Projects</a>
     );
   }
   render() {
@@ -54,7 +83,7 @@ class Description extends React.Component {
     return (
       <div className="description-container">
         <div className="overview-box">
-          <h1>{project.name}</h1>
+          <h1 style={{color:project.color}}>{project.name}</h1>
           <h2>{project.description}</h2>
           {this.appLink}
           <div className="pic-wrapper">
@@ -62,14 +91,12 @@ class Description extends React.Component {
           </div>
         </div>
         <div className="text-box">
-          <h1>Features</h1>
-          <h2>{project.name} has the following features:</h2>
+          <h1 style={{color:project.color}}>Features</h1>
           {this.features}
           {this.featuresPictures}
         </div>
         <div className="text-box">
-          <h1>Technology</h1>
-          <h2>I built {project.name} with the following:</h2>
+          <h1 style={{color:project.color}}>Technology</h1>
           {this.technology}
           {this.techPictures}
         </div>

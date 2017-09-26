@@ -6,27 +6,132 @@
       "name": "PackHire",
       "description": "PackHire provides you with platform where you can turn people in your network into the best recruiters for your company. Most best hires come from referrals from within a trusted network. PackHire was challenging because the tool have to be simple, intuitive and sticky, while maintaining optiminal functionality. My co-worker and I received small angel funding and were able to do it all and had a fully functional platform up in just two weeks.",
       "link": "http://www.packhire.com",
+      "color": "rgb(66,109,178)",
       "mainPicture": "images/projects/packhire/pack-0.jpg",
-      "features": [
-        "Social Media Integration (allowing users to easily share on all of their social media)",
-        "Statistical analysis of vital data points on how the job is doing in the network.",
-        "Individualized analytics tracking for employees to follow their progress and impact on the job campaign.",
-        "Algorithmic scoring of candidates based on network graph",
-        "Campaign management system for HR to edit their job listing campaign"
-      ],
+      "features": {
+        "PackHire":[
+          "Social Media Integration (allowing users to easily share on all of their social media)",
+          "Statistical analysis of vital data points on how the job is doing in the network.",
+          "Individualized analytics tracking for employees to follow their progress and impact on the job campaign.",
+          "Algorithmic scoring of candidates based on network graph",
+          "Campaign management system for HR to edit their job listing campaign"
+        ]
+      },
       "featuresPictures": [
         "images/projects/packhire/pack-2.jpg",
         "images/projects/packhire/pack-3.jpg"
       ],
-      "technology": [
-        "Front-End: HTML, CSS, Javascript, Gulp, & JQuery",
-        "Back-End: Ruby on Rails & PostgreSQL",
-        "Hosting: Heroku",
-        "Version Control: GitHub"
-      ],
+      "technology": {
+        "PackHire": [
+          "Front-End: HTML, CSS, Javascript, Gulp, & JQuery",
+          "Back-End: Ruby on Rails & PostgreSQL",
+          "Hosting: Heroku",
+          "Version Control: GitHub"
+        ]
+      },
       "techPictures": [
         "images/projects/packhire/pack-6.jpg",
         "images/projects/packhire/pack-4.jpg"
+      ]
+  },
+  "seam" : {
+      "name": "SEAM",
+      "description": "Our team was fed up with the way meetings occupied our lives - meetings that we didn't have to be in, meetings that ran way over time and meetings that made no decisions. After meetings, we would crawl back to our desks feeling unproductive and frustrated. So we created SEAM, a tool to help you feel productive in the meeting room. SEAM helps you plan for focused discussions, gives you the power to move the conversation forward and aligns your team on next steps at the end of the meeting.",
+      "link": "http://seam.herokuapp.com",
+      "color": "rgb(142,199,66)",
+      "mainPicture": "images/projects/seam/seam-0.jpg",
+      "features": {
+        "SEAM": [
+          "Real-Time User Communication (Implemented via Socket.IO)",
+          "Automatic Email Generation & Email Forwarding",
+          "Algorithmic Meeting Notes Aggregation & Assignee",
+          "Auto-Management of Contact List & Most Recently Added",
+          "In-Meeting 'Smart' Timer with Notification"
+        ]
+      },
+      "featuresPictures": [
+        "images/projects/seam/seam-1.jpg",
+        "images/projects/seam/seam-2.jpg"
+      ],
+      "technology": {
+        "SEAM": [
+          "Front-End: HTML, CSS, Javascript, & JQuery",
+          "Back-End: Node.JS & MongoDB",
+          "Hosting: Heroku",
+          "Version Control: GitHub"
+        ]
+      },
+      "techPictures": [
+        "images/projects/seam/seam-3.jpg",
+        "images/projects/seam/seam-4.jpg"
+      ]
+  },
+  "data":  {
+      "name": "Data Science",
+      "description": "My data science projects include a bioinformatics research project and a social media advertising data project. For my bioinformatics research project I created a pipeline that sequenced genomic human data and iteratively corrected the data for bias and noise. After the correction, I visualized the 3D architecture of the entire genome to determine methods of cancer detection based on nuclear architecture. For my social media advertising project, I created algorithms that automatically queried Facebook for statistics on the social ads. After the data is collected, I created algorithms to optimize engagement and insights on social ads such as increasing ad duration during peak engagements. The data is then stored for further analysis and optimzation by the 4C Insights data science team.",
+      "color": "rgb(37,128,197)",
+      "mainPicture": "images/projects/data/data-0.jpg",
+      "features": {
+        "PITCH(Genomic Architecture)": [
+          "Reading & analyzing 5GB+ of data",
+          "Statistically filtering & correcting data",
+          "Visual generation of heatmaps and circos plots",
+          "Human Genome Analysis between 23 chromosomes",
+          "Analysis of intra-chromosomal interactions"
+        ],
+        "4C Insights Data Aggregation": [
+          "Utilizing Facebook Graph API",
+          "Statistical correction & filter of advertisement data",
+          "Visual generation of data after correction"
+        ]
+      },
+      "featuresPictures": [
+        "images/projects/data/data-1.jpg",
+        "images/projects/data/data-2.jpg"
+      ],
+      "technology": {
+        "4C Insights Data Aggregation & PITCH (Genomic Architecture)": [
+          "Python",
+          "Java"
+        ]
+      },
+      "techPictures": [
+        "images/projects/data/data-3.jpg",
+        "images/projects/data/data-4.jpg"
+      ]
+  },
+  "data":  {
+      "name": "Front-End Projects",
+      "description": "My front-end projects consists of creating multiple sites for clients as well as organizations to visualize data and content in a meaningful and optimized way. All of the projects I build are fully-responsive and provide detailed instructions on how to update content on the site. Many of my sites are still being used in production after 2 years with 20,000+ views.",
+      "color": "rgb(213,20,32)",
+      "link": "http://www.wildhacks.org",
+      "mainPicture": "images/projects/front/front-0.jpg",
+      "features": {
+        "My Front-End Projects": [
+          "Fully Responsive Site",
+          "Mobile-First Architecture",
+          "Task Automation for faster styling changes and updates",
+          "Segmented code for easier content edits"
+        ]
+      },
+      "featuresPictures": [
+        "images/projects/front/front-1.jpg",
+        "images/projects/front/front-2.jpg"
+      ],
+      "technology": {
+        "my Front-End Projects": [
+          "HTML",
+          "Javascript",
+          "Gulp & Webpack",
+          "React.JS",
+          "Angular.JS",
+          "Hosting: Heroku, & Custom Servers",
+          "Version Control: GitHub"
+        ]
+      },
+      "techPictures": [
+        "images/projects/front/front-3.jpg",
+        "images/projects/front/front-4.jpg"
       ]
   }
 }
