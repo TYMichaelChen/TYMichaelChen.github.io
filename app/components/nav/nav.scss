@@ -1,21 +1,54 @@
 @import "../../static/css/variables.scss";
 
 .navbar {
+  transition: background-color 0.8s ease;
   .navbar-brand {
     font-family: 'Source Serif Pro', serif;
     font-size: 25px;
     font-weight: 700;
-    color: $darkColor;
+    color: $lightColor;
     .light-txt {
+      font-family: 'Source Serif Pro', serif;
+    }
+    .dark-txt {
       font-family: 'Source Serif Pro', serif;
     }
   }
   li {
     margin:0 20px;
+    text-transform: uppercase;
     a {
       color: $darkColor;
       font-size: 14px;
       font-weight: 600;
+      cursor: pointer;
+    }
+    a:hover, a:focus {
+      background: none;
+      color: $lightColor;
+    }
+    .active {
+      color: $mainColor;
+      cursor: default;
+    }
+  }
+}
+.nav-other {
+  background-color: $sysBlack;
+  transition: background-color 0.8s ease;
+  li {
+    a {
+      color: $sysWhite;
+    }
+    a:hover, a:focus {
+      background: none;
+      color: $mainColor;
+    }
+  }
+  .navbar-brand {
+    color: $mainColor;
+    .dark-txt {
+      color: $lightColor;
     }
   }
 }

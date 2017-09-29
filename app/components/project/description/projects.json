@@ -146,7 +146,7 @@
         "images/projects/data/data-4.jpg"
       ]
   },
-  "front":  {
+  "frontend":  {
       "name": "Front-End Projects",
       "description": "My front-end projects consists of creating multiple sites for clients as well as organizations to visualize data and content in a meaningful and optimized way. All of the projects I build are fully-responsive and provide detailed instructions on how to update content on the site. Many of my sites are still being used in production after 2 years with 20,000+ views.",
       "color": "rgb(213,20,32)",

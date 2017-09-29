@@ -2,6 +2,7 @@ import React from 'react';
 import './project.scss';
 
 // Project Images
+import Braindump from '../../static/images/projects/brain.png';
 import Packhire from '../../static/images/projects/packhire.jpg';
 import SEAM from '../../static/images/projects/seam.jpg';
 import Twitter from '../../static/images/projects/twitter.jpg';
@@ -12,6 +13,13 @@ import Data from '../../static/images/projects/data.jpg';
 class Project extends React.Component {
   get projects() {
     return [
+      {
+        name: "Braindump",
+        role: "Software Engineer (Full Stack)",
+        technology: ['Ruby', 'Javascript', 'HTML5', 'CSS3', 'PostgreSQL', 'SASS'],
+        image: Braindump,
+        className: 'braindump',
+      },
       {
         name: "PackHire",
         role: "Software Engineer (Full Stack)",
@@ -40,13 +48,6 @@ class Project extends React.Component {
         image: Frontend,
         className: 'frontend',
       },
-      {
-        name: "Twitter Filter",
-        role: "Software Engineer (Full Stack)",
-        technology: ['Ruby', 'Javascript', 'HTML5', 'CSS3', 'PostgreSQL', 'SASS'],
-        image: Twitter,
-        className: 'twitter',
-      },
     ];
   }
   get projectsComponent() {
@@ -66,9 +67,11 @@ class Project extends React.Component {
             <div className="tag-container">
               {tags}
             </div>
-            <button className={`details-button ${project.className}-btn`}>
-              VIEW DETAILS
-            </button>
+            <a href={`/project?project=${project.className}`}>
+              <button className={`details-button ${project.className}-btn`}>
+                VIEW DETAILS
+              </button>
+            </a>
           </div>
         </div>
       );

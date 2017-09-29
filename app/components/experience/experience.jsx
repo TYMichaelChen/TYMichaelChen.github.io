@@ -89,7 +89,7 @@ class Experience extends React.Component {
     return (
       <div id="experiences" className="experience-container">
         <div className="text-box">
-          <h1>EXPERIENCE</h1>
+          <h1>ABOUT ME</h1>
           <h2>
             Im a software engineer working at Zanbato, creating a stock exchange for private markets (the first of its kind
             Alternative Trading System). I graduated from Northwestern University in 2015 studying Biological Sciences and Computer Science.

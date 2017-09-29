@@ -10,8 +10,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 const PrimaryLayout = () => (
     <main>
       <Switch>
-        <Route exact path="/" component={HomePage} />
         <Route exact path="/project" component={ProjectPage} />
+        <Route path="/" component={HomePage} />
       </Switch>
     </main>
 )

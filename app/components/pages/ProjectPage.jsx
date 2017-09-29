@@ -2,7 +2,7 @@ import React from 'react';
 
 import Experience from '../experience/experience.jsx';
 import Home from '../home/home.jsx';
-import Nav from '../nav/nav.jsx';
+import DescriptionNav from '../project/description/description-nav.jsx';
 import Description from '../project/description/description.jsx';
 import Footer from '../footer/footer.jsx';
 import '../../static/css/main.scss';
@@ -35,7 +35,6 @@ class ProjectPage extends React.Component {
         if (this.state.project) {
             return (
               <div>
-                <Nav />
                 <Description project={this.state.project} />
               </div>
             );

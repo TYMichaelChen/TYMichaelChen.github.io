@@ -55,6 +55,11 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
         {from:'app/static/images',to:'images'}
-    ])
+    ]),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    })
   ]
 };

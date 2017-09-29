@@ -4,8 +4,9 @@
   "description": "ReactJS Starter kit for making static react apps",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --config webpack.config.prod.js",
     "start": "webpack-dev-server",
+    "start-prod": "webpack-dev-server --config webpack.config.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Michael Chen",
@@ -18,8 +19,7 @@
     "react-dom": "^15.5.4",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scroll": "^1.5.2",
-    "react-scrollable-anchor": "^0.5.0"
+    "react-scroll": "^1.5.2"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",

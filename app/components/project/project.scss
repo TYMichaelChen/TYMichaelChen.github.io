@@ -93,39 +93,28 @@
     -ms-transition: background-color 300ms linear;
     transition: background-color 300ms linear;
   }
+  .braindump-row {
+    @extend .transition-row;
+    background-color: $braindumpColor;
+  }
   .packhire-row {
     @extend .transition-row;
     background-color: $packhireColor;
-  }
-  .packhire-row:hover {
-    background-color: $packhireColor1;
   }
   .seam-row {
     @extend .transition-row;
     background-color: $seamColor;
   }
-  .seam-row:hover {
-    background-color: $seamColor1;
-  }
   .data-row {
     @extend .transition-row;
     background-color: $dataColor;
-  }
-  .data-row:hover {
-    background-color: $dataColor1;
   }
   .frontend-row {
     @extend .transition-row;
     background-color: $frontendColor;
   }
-  .frontend-row:hover {
-    background-color: $frontendColor1;
-  }
   .twitter-row {
     @extend .transition-row;
     background-color: $twitterColor;
-  }
-  .twitter-row:hover {
-    background-color: $twitterColor1;
   }
 }

@@ -7,7 +7,7 @@ import './home.scss';
 class Home extends React.Component {
   render() {
     return (
-      <div className="home-container">
+      <div id="home-container" className="home-container">
         <div className="row">
           <div className="col-md-6 picture-box">
             <img className="main-picture" src={MainPicture} alt="Profile Picture" />

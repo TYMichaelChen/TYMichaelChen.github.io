@@ -2,6 +2,7 @@ import React from 'react';
 import './description.scss';
 import _ from 'lodash';
 import Projects from './projects.json';
+import DescriptionNav from './description-nav.jsx';
 
 
 class Description extends React.Component {
@@ -78,7 +79,7 @@ class Description extends React.Component {
         </div>
       );
       return (
-        <div>
+        <div id="design">
           <div className="text-box">
             <h1 style={{color:project.color}} className="design-txt">{project.name} Designs</h1>
             {design}
@@ -120,7 +121,7 @@ class Description extends React.Component {
           );
         })
         return (
-          <div>
+          <div key={index}>
             <h2>I built {project.name} using:</h2>
             <ul>
               {techElem}
@@ -150,7 +151,7 @@ class Description extends React.Component {
   }
   get appLink() {
     const project = this.props.project;
-    if(project.link) {
+    if (project.link) {
       return (
         <a style={{color:project.color}} href={project.link} target="_blank">Visit the {project.name} App</a>
       );
@@ -163,33 +164,54 @@ class Description extends React.Component {
         <a style={{color:project.color}} href="/#projects">Back to Other Projects</a>
     );
   }
+  get links() {
+    const project = this.props.project;
+    const links = [];
+    links.push({name: "overview", link: "overview"});
+    if (project.features) {
+      links.push({name: "features", link: "features"});
+    }
+    if (project.design) {
+      links.push({name: "design", link: "design"});
+    }
+    if (project.technology) {
+      links.push({name: "technology", link: "technology"});
+    }
+    if (project.howItWorks) {
+      links.push({name: "How It Works", link: "howItWorks"});
+    }
+    return links;
+  }
   render() {
     const project = this.props.project;
     return (
-      <div className="description-container">
-        <div className="overview-box">
-          <h1 style={{color:project.color}}>{project.name}</h1>
-          <h2>{project.description}</h2>
-          {this.appLink}
-          <div className="pic-wrapper">
-            <img className="main-picture" src={project.mainPicture} />
+      <div>
+        <DescriptionNav links={this.links} />
+        <div className="description-container">
+          <div id="overview" className="overview-box">
+            <h1 style={{color:project.color}}>{project.name}</h1>
+            <h2>{project.description}</h2>
+            {this.appLink}
+            <div className="pic-wrapper">
+              <img className="main-picture" src={project.mainPicture} />
+            </div>
           </div>
-        </div>
-        <div className="text-box">
-          {this.features}
-        </div>
-        {this.featuresPictures}
-        {this.design}
-        <div className="text-box">
-          {this.technology}
-        </div>
-        {this.techPictures}
-        <div className="text-box">
-          {this.howItWorks}
-        </div>
-        <div className="footer-box">
-          {this.appLink}
-          {this.backLink}
+          <div id="features" className="text-box">
+            {this.features}
+          </div>
+          {this.featuresPictures}
+          {this.design}
+          <div id="technology" className="text-box">
+            {this.technology}
+          </div>
+          {this.techPictures}
+          <div id="howItWorks" className="text-box">
+            {this.howItWorks}
+          </div>
+          <div className="footer-box">
+            {this.appLink}
+            {this.backLink}
+          </div>
         </div>
       </div>
     );
