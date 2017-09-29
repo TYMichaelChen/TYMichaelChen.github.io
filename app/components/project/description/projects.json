@@ -13,12 +13,12 @@
         },
         {
           "name": "STAYING ORGANIZED HAS NEVER BEEN EASIER.",
-          "picture": "images/projects/brain/brain-2.svg",
+          "picture": "images/projects/brain/brain-2.png",
           "description": "When you add an entry to your stream, it shows with your other entries from each day. By adding additional tags to your entries you can associate that entry with any number of other enrtries simply by sharing the same tag. Bigger projects, decisions, or areas of your life might have there own tags and hundreds of entries associated with them."
         },
         {
           "name": "REVIEW, REORDER, AND REVISE.",
-          "picture": "images/projects/brain/brain-3.svg",
+          "picture": "images/projects/brain/brain-3.png",
           "description": "Looking at your stream throughout your day gives you an instant snapshot of the things that you've done, and the things that you still have to do. You can reorder the entries to relect your priorities, and update with additional information."
         },
         {
@@ -26,6 +26,26 @@
           "picture": "images/projects/brain/brain-4.png",
           "description": "Braindump uses emoji as signifiers for your entries, pick your favorites! Use them and all the elements to create the system that works for you. Mental hygiene is important is important but that doesn't mean it can't be fun!"
         }
+      ],
+      "technology": {
+        "Braindump": [
+          "Mobile: Swift 4",
+          "Back-End: Django"
+        ],
+        "description": "At the core, Braindump is centered around the content and the quickly offloading your thoughts and organizing complex thoughts for the users. With that in mind, I have architected a scalable system that is built for speed, mobility and instant information retrieval. We envision this app being built for various uses, so the backend database and systems have to be as flexible as possible. I built this using Swift 4 for the iOS app, Django for the backend server, and PostgreSQL for the database."
+      },
+      "techPictures": [
+        "images/projects/brain/brain-7.png",
+        "images/projects/brain/brain-8.png",
+        "images/projects/brain/brain-9.png"
+      ],
+      "design": {
+        "name": "Design",
+        "description": "Because Braindump is all about the content that you put into it, the designs reflect that. When viewing your stream (left) you can scoll back and forwards in time. You can drag to reorder, tap the emoji to mark the entry as done/undone, and tap the content to edit. The tag view (right) is an easy way to track goals, projects, lists, or even emotions. Tapping into a tag will show you all the entries associated with it."
+      },
+      "designPictures": [
+        "images/projects/brain/brain-5.png",
+        "images/projects/brain/brain-6.png"
       ]
   },
   "packhire" : {

@@ -81,7 +81,7 @@ class Project extends React.Component {
   }
   render() {
     return (
-      <div className="project-container">
+      <div id="projects" className="project-container">
         <div className="overview-box">
           <h1>MY PROJECTS</h1>
           <h2>

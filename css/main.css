@@ -1,7 +1,7 @@
 body {
   width: 100%; }
 
-h1, h2, h3, h4, h5, h6, a, span {
+h1, h2, h3, h4, h5, h6, a, span, li {
   font-family: 'Muli', sans-serif; }
 
 .light-txt {
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6, a, span {
 body {
   width: 100%; }
 
-h1, h2, h3, h4, h5, h6, a, span {
+h1, h2, h3, h4, h5, h6, a, span, li {
   font-family: 'Muli', sans-serif; }
 
 .light-txt {
@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6, a, span {
 body {
   width: 100%; }
 
-h1, h2, h3, h4, h5, h6, a, span {
+h1, h2, h3, h4, h5, h6, a, span, li {
   font-family: 'Muli', sans-serif; }
 
 .light-txt {
@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6, a, span {
 body {
   width: 100%; }
 
-h1, h2, h3, h4, h5, h6, a, span {
+h1, h2, h3, h4, h5, h6, a, span, li {
   font-family: 'Muli', sans-serif; }
 
 .light-txt {
@@ -278,7 +278,7 @@ h1, h2, h3, h4, h5, h6, a, span {
 body {
   width: 100%; }
 
-h1, h2, h3, h4, h5, h6, a, span {
+h1, h2, h3, h4, h5, h6, a, span, li {
   font-family: 'Muli', sans-serif; }
 
 .light-txt {
@@ -289,7 +289,7 @@ h1, h2, h3, h4, h5, h6, a, span {
 body {
   width: 100%; }
 
-h1, h2, h3, h4, h5, h6, a, span {
+h1, h2, h3, h4, h5, h6, a, span, li {
   font-family: 'Muli', sans-serif; }
 
 .light-txt {
@@ -302,6 +302,15 @@ h1, h2, h3, h4, h5, h6, a, span {
   display: inline-block;
   padding-top: 80px;
   width: 100%; }
+  .description-container a {
+    font-size: 16px;
+    padding-top: 50px;
+    color: #00BFA5;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center; }
+  .description-container a:hover {
+    opacity: 0.75; }
   .description-container .overview-box {
     width: 60%;
     margin: 0 auto;
@@ -309,15 +318,66 @@ h1, h2, h3, h4, h5, h6, a, span {
     .description-container .overview-box h1 {
       text-transform: capitalize;
       font-weight: 700;
-      font-size: 28px; }
+      font-size: 35px;
+      color: #00BFA5; }
     .description-container .overview-box h2 {
       font-size: 18px;
       line-height: 1.5;
-      margin-bottom: 30px; }
-    .description-container .overview-box a {
-      padding-top: 50px;
-      color: #00BFA5;
-      cursor: pointer;
-      text-decoration: none; }
-    .description-container .overview-box a:hover {
-      color: rgba(0, 191, 165, 0.7); }
+      margin-bottom: 30px;
+      text-align: left; }
+    .description-container .overview-box .pic-wrapper {
+      margin-top: 30px; }
+    .description-container .overview-box .main-picture {
+      width: 70%;
+      text-align: center; }
+  .description-container .text-box {
+    width: 60%;
+    margin: 50px auto 0 auto; }
+    .description-container .text-box h1 {
+      text-align: center;
+      text-transform: capitalize;
+      font-weight: 700;
+      font-size: 22px; }
+    .description-container .text-box .text h2 {
+      font-size: 18px; }
+    .description-container .text-box .text li {
+      font-size: 16px; }
+    .description-container .text-box .work-txt {
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-size: 30px; }
+    .description-container .text-box .work {
+      text-align: center;
+      margin-top: 40px; }
+      .description-container .text-box .work h2 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #000; }
+      .description-container .text-box .work h3 {
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: left; }
+      .description-container .text-box .work img {
+        width: 50%;
+        margin: 20px auto; }
+  .description-container .feature-images-box {
+    width: 60%;
+    margin: 60px auto 0 auto;
+    text-align: center; }
+    .description-container .feature-images-box .feature-picture-2 {
+      width: 50%; }
+    .description-container .feature-images-box .feature-picture-3 {
+      width: 33.3%; }
+  .description-container .design-images-box {
+    margin-top: 0; }
+  .description-container .footer-box {
+    width: 60%;
+    margin: 10px auto 40px auto;
+    text-align: center; }
+    .description-container .footer-box a {
+      padding-top: 30px;
+      display: block; }
+    .description-container .footer-box a:last-child {
+      padding-top: 60px;
+      font-size: 22px;
+      font-weight: 700; }

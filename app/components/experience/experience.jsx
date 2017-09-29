@@ -87,7 +87,7 @@ class Experience extends React.Component {
   }
   render() {
     return (
-      <div className="experience-container">
+      <div id="experiences" className="experience-container">
         <div className="text-box">
           <h1>EXPERIENCE</h1>
           <h2>

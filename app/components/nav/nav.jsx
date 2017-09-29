@@ -1,5 +1,8 @@
 import React from 'react';
 import './nav.scss';
+import Scroll from 'react-scroll'
+let Link = Scroll.Link;
+
 
 
 class Nav extends React.Component {
@@ -18,9 +21,15 @@ class Nav extends React.Component {
           </div>
           <div className="collapse navbar-collapse" id="navbar">
             <ul className="nav navbar-nav navbar-right">
-              <li><a href="#project-panel">ABOUT</a></li>
-              <li><a href="#about-panel">EXPERIENCE</a></li>
-              <li><a href="#about-panel">PROJECTS</a></li>
+              <li>
+                <Link activeClass="active" to="projects" spy={true} smooth={true} duration={1000}>Projects</Link>
+              </li>
+              <li>
+                <Link activeClass="active" to="experiences" spy={true} smooth={true} duration={1000}>Experience</Link>
+              </li>
+              <li>
+                <Link activeClass="active" to="projects" spy={true} smooth={true} duration={1000}>About</Link>
+              </li>
               <li><a href="http://blog.miketychen.com" target="_blank">BLOG</a></li>
             </ul>
           </div>
