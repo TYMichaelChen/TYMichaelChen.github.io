@@ -7,44 +7,78 @@ import Projects from './projects.json';
 class Description extends React.Component {
   get features() {
     const project = this.props.project;
-    return _.map(project.features, (features, project) => {
-      const featuresElem = _.map(features, (feature, idx) => {
-        return (
-          <li key={idx}>{feature}</li>
-        );
-      })
+    if (project.features) {
+      const features = _.map(project.features, (features, index) => {
+          const featuresElem = _.map(features, (feature, idx) => {
+            return (
+              <li key={idx}>{feature}</li>
+            );
+          })
+          return (
+            <div key={index} className="text">
+              <h2>{project.name} has the following features:</h2>
+              <ul>
+                {featuresElem}
+              </ul>
+            </div>
+          );
+        });
       return (
-        <div className="text">
-          <h2>{project} has the following features:</h2>
-          <ul>
-            {featuresElem}
-          </ul>
+        <div>
+          <h1 style={{color:project.color}}>Features</h1>
+          {features}
         </div>
       );
-    });
+    }
+    return null;
   }
   get featuresPictures() {
     const project = this.props.project;
-    const pictures =  _.map(project.featuresPictures, (picture, idx) => {
-      return <img className="feature-picture" src={picture} />;
-    });
-    return (
-      <div className="feature-images-box">
-        {pictures}
-      </div>
-    );
+    if (project.features) {
+      const pictures =  _.map(project.featuresPictures, (picture, idx) => {
+        return <img key={idx} className="feature-picture" src={picture} />;
+      });
+      return (
+        <div className="feature-images-box">
+          {pictures}
+        </div>
+      );
+    }
+    return null;
+  }
+  get howItWorks() {
+    const project = this.props.project;
+    if (project.howItWorks) {
+      const howItWorks = _.map(project.howItWorks, (work, index) => {
+          return (
+            <div key={index} className="work">
+              <h2>{work.name}</h2>
+              <img src={work.picture} />
+              <h3>{work.description}</h3>
+            </div>
+          );
+      });
+      return (
+        <div>
+          <h1 style={{color:project.color}} className="work-txt">How Does {project.name} Work?</h1>
+          {howItWorks}
+        </div>
+      );
+    }
+    return null;
   }
   get technology() {
     const project = this.props.project;
-    return _.map(project.technology, (technology, project) => {
+    return _.map(project.technology, (technology, index) => {
       const techElem = _.map(technology, (tech, idx) => {
         return (
           <li key={idx}>{tech}</li>
         );
       })
       return (
-        <div className="text">
-          <h2>I built {project} using:</h2>
+        <div key={index} className="text">
+          <h1 style={{color:project.color}}>Technology</h1>
+          <h2>I built {project.name} using:</h2>
           <ul>
             {techElem}
           </ul>
@@ -55,7 +89,7 @@ class Description extends React.Component {
   get techPictures() {
     const project = this.props.project;
     const pictures =  _.map(project.techPictures, (picture, idx) => {
-      return <img className="feature-picture" src={picture} />;
+      return <img key={idx} className="feature-picture" src={picture} />;
     });
     return (
       <div className="feature-images-box">
@@ -91,15 +125,17 @@ class Description extends React.Component {
           </div>
         </div>
         <div className="text-box">
-          <h1 style={{color:project.color}}>Features</h1>
           {this.features}
-          {this.featuresPictures}
         </div>
+        {this.featuresPictures}
         <div className="text-box">
-          <h1 style={{color:project.color}}>Technology</h1>
-          {this.technology}
-          {this.techPictures}
+          {this.howItWorks}
         </div>
+        {this.howPictures}
+        <div className="text-box">
+          {this.technology}
+        </div>
+        {this.techPictures}
         <div className="footer-box">
           {this.appLink}
           {this.backLink}

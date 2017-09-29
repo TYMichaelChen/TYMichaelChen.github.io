@@ -47,7 +47,6 @@
       text-transform: capitalize;
       font-weight: 700;
       font-size: 22px;
-      color: $mainColor;
     }
     .text {
       h2 {
@@ -57,12 +56,36 @@
         font-size: 16px;
       }
     }
-    .feature-images-box {
-      margin-top: 60px;
+    .work-txt {
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-size: 30px;
+    }
+    .work {
       text-align: center;
-      .feature-picture {
-        width: 50%;
+      margin-top: 60px;
+      h2 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #000;
       }
+      h3 {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+      img {
+        width: 50%;
+        margin: 20px auto;
+      }
+    }
+  }
+  .feature-images-box {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+    .feature-picture {
+      width: 50%;
     }
   }
   .footer-box {

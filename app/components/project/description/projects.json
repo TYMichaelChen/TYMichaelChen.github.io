@@ -1,6 +1,32 @@
 {
   "braindump" : {
-      "name": "Braindump"
+      "name": "Braindump",
+      "description": "Braindump is a mobile application that help people practice good mental hygiene. As life continue to become more complex, we believe will become a necessity. We aim to improve your brain function and prevent burnout in just a few minutes everyday. Neuroscience has shown that by using simple techniques people can change the structure and function of their brain. Braindump uses these techniques to help founders maintain their focus, while handling the demands of being a founder.",
+      "link": "http://www.braindumpapp.com",
+      "color": "#FF3D7B",
+      "mainPicture": "images/projects/brain/brain-0.png",
+      "howItWorks": [
+        {
+          "name": "ONE THOUGHT, ONE ENTRY. SIMPLE AS THAT.",
+          "picture": "images/projects/brain/brain-1.png",
+          "description": "Every entry into Braindump represents a single thought, idea, decision, or piece of information you don't want to forget (but don't want to constantly remember either). In addition to the text, you can enhance the information contained in each entry by adding time triggers, amounts, social mentions, and more."
+        },
+        {
+          "name": "STAYING ORGANIZED HAS NEVER BEEN EASIER.",
+          "picture": "images/projects/brain/brain-2.svg",
+          "description": "When you add an entry to your stream, it shows with your other entries from each day. By adding additional tags to your entries you can associate that entry with any number of other enrtries simply by sharing the same tag. Bigger projects, decisions, or areas of your life might have there own tags and hundreds of entries associated with them."
+        },
+        {
+          "name": "REVIEW, REORDER, AND REVISE.",
+          "picture": "images/projects/brain/brain-3.svg",
+          "description": "Looking at your stream throughout your day gives you an instant snapshot of the things that you've done, and the things that you still have to do. You can reorder the entries to relect your priorities, and update with additional information."
+        },
+        {
+          "name": "YOU MIGHT EVEN HAVE A LITTLE FUN!",
+          "picture": "images/projects/brain/brain-4.png",
+          "description": "Braindump uses emoji as signifiers for your entries, pick your favorites! Use them and all the elements to create the system that works for you. Mental hygiene is important is important but that doesn't mean it can't be fun!"
+        }
+      ]
   },
   "packhire" : {
       "name": "PackHire",
@@ -100,7 +126,7 @@
         "images/projects/data/data-4.jpg"
       ]
   },
-  "data":  {
+  "front":  {
       "name": "Front-End Projects",
       "description": "My front-end projects consists of creating multiple sites for clients as well as organizations to visualize data and content in a meaningful and optimized way. All of the projects I build are fully-responsive and provide detailed instructions on how to update content on the site. Many of my sites are still being used in production after 2 years with 20,000+ views.",
       "color": "rgb(213,20,32)",
