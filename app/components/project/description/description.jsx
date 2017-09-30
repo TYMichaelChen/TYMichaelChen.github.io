@@ -25,9 +25,12 @@ class Description extends React.Component {
           );
         });
       return (
-        <div>
-          <h1 style={{color:project.color}}>Features</h1>
-          {features}
+        <div id="features">
+          <div className="text-box">
+            <h1 style={{color:project.color}}>Features</h1>
+            {features}
+          </div>
+          {this.featuresPictures}
         </div>
       );
     }
@@ -61,7 +64,7 @@ class Description extends React.Component {
           );
       });
       return (
-        <div>
+        <div id="howItWorks" className="text-box">
           <h1 style={{color:project.color}} className="work-txt">How Does {project.name} Work?</h1>
           {howItWorks}
         </div>
@@ -131,9 +134,14 @@ class Description extends React.Component {
       });
     }
     return (
-      <div className="text">
-          <h1 style={{color:project.color}}>Technology</h1>
-          {content}
+      <div id="technology">
+        <div className="text-box">
+          <div className="text">
+              <h1 style={{color:project.color}}>Technology</h1>
+              {content}
+          </div>
+        </div>
+        {this.techPictures}
       </div>
     );
   }
@@ -196,18 +204,10 @@ class Description extends React.Component {
               <img className="main-picture" src={project.mainPicture} />
             </div>
           </div>
-          <div id="features" className="text-box">
-            {this.features}
-          </div>
-          {this.featuresPictures}
+          {this.features}
           {this.design}
-          <div id="technology" className="text-box">
-            {this.technology}
-          </div>
-          {this.techPictures}
-          <div id="howItWorks" className="text-box">
-            {this.howItWorks}
-          </div>
+          {this.technology}
+          {this.howItWorks}
           <div className="footer-box">
             {this.appLink}
             {this.backLink}

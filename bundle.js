@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4d19f600ba351321c072"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "8e6ea3b740f5c68c044e"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -30614,13 +30614,18 @@ class Description extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
       });
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        null,
+        { id: 'features' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'h1',
-          { style: { color: project.color } },
-          'Features'
+          'div',
+          { className: 'text-box' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'h1',
+            { style: { color: project.color } },
+            'Features'
+          ),
+          features
         ),
-        features
+        this.featuresPictures
       );
     }
     return null;
@@ -30662,7 +30667,7 @@ class Description extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
       });
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        null,
+        { id: 'howItWorks', className: 'text-box' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h1',
           { style: { color: project.color }, className: 'work-txt' },
@@ -30763,13 +30768,22 @@ class Description extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
     }
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
-      { className: 'text' },
+      { id: 'technology' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'h1',
-        { style: { color: project.color } },
-        'Technology'
+        'div',
+        { className: 'text-box' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'text' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'h1',
+            { style: { color: project.color } },
+            'Technology'
+          ),
+          content
+        )
       ),
-      content
+      this.techPictures
     );
   }
   get techPictures() {
@@ -30852,24 +30866,10 @@ class Description extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'main-picture', src: project.mainPicture })
           )
         ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'div',
-          { id: 'features', className: 'text-box' },
-          this.features
-        ),
-        this.featuresPictures,
+        this.features,
         this.design,
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'div',
-          { id: 'technology', className: 'text-box' },
-          this.technology
-        ),
-        this.techPictures,
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'div',
-          { id: 'howItWorks', className: 'text-box' },
-          this.howItWorks
-        ),
+        this.technology,
+        this.howItWorks,
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
           { className: 'footer-box' },
