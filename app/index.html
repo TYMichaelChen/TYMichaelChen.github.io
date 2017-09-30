@@ -27,11 +27,21 @@
       }(window.location))
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
-    <style>
-      @import "//fonts.googleapis.com/css?family=Source+Serif+Pro:600,700"
-    </style>
-    <style>
-      @import "//fonts.googleapis.com/css?family=Muli:300,400,600,700"
-    </style>
+    <script>
+      (function() {
+          var link = document.createElement('link');
+          link.rel = "stylesheet";
+          link.href = "//fonts.googleapis.com/css?family=Source+Serif+Pro:600,700";
+          document.querySelector("head").appendChild(link);
+      })();
+    </script>
+    <script>
+      (function() {
+          var link = document.createElement('link');
+          link.rel = "stylesheet";
+          link.href = "//fonts.googleapis.com/css?family=Muli:300,400,600,700";
+          document.querySelector("head").appendChild(link);
+      })();
+    </script>
   </body>
 </html>
