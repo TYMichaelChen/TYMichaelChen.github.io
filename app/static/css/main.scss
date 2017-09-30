@@ -1,3 +1,4 @@
+@import '~/node_modules/bootstrap/dist/css/bootstrap.css';
 @import "./variables.scss";
 
 body {
@@ -6,16 +7,4 @@ body {
 
 h1, h2, h3, h4, h5, h6, a, span, li {
   font-family: 'Muli', sans-serif;
-}
-
-.light-txt {
-  color: $lightColor;
-}
-
-.dark-txt {
-  color: $darkColor;
-}
-
-.serif-txt {
-  font-family: 'Source Serif Pro', serif;
 }

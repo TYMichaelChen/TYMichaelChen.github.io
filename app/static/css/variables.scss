@@ -40,3 +40,15 @@ $postgresql: rgb(102, 20, 19);
 $sass: rgb(102, 20, 19);
 
 
+.light-txt {
+  color: $lightColor;
+}
+
+.dark-txt {
+  color: $darkColor;
+}
+
+.serif-txt {
+  font-family: 'Source Serif Pro', serif;
+}
+
