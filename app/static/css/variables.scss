@@ -4,8 +4,9 @@ $sysGray: #333333;
 $sysGray1: rgb(80, 80, 80);
 $sysWhite: rgb(255, 255, 255);
 $sysBlack: rgb(0, 0, 0);
+$oldGreen: rgb(30,185,84);
 
-$mainColor: $sysGreen;
+$mainColor: $oldGreen;
 $mainColor1: $sysGreen1;
 $lightColor: $sysWhite;
 $darkColor: $sysGray;
@@ -39,6 +40,12 @@ $css: rgb(102, 20, 19);
 $postgresql: rgb(102, 20, 19);
 $sass: rgb(102, 20, 19);
 
+
+$break-smaller:20em;
+$break-small:23em;
+$break-med:40.063em;
+$break-lg:64.063em;
+$break-xlg:80.063em;
 
 .light-txt {
   color: $lightColor;

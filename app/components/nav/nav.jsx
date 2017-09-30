@@ -1,6 +1,6 @@
 import React from 'react';
 import './nav.scss';
-import Scroll from 'react-scroll'
+import Scroll from 'react-scroll';
 let Link = Scroll.Link;
 
 
@@ -14,7 +14,7 @@ class Nav extends React.Component {
   }
   componentDidMount() {
     document.addEventListener('scroll', () => {
-      const homeHeight = document.getElementById('home-container').clientHeight;
+      const homeHeight = document.getElementById('home').clientHeight;
       console.log(homeHeight);
       this.setState({ atTop: window.scrollY < homeHeight });
     });
@@ -31,7 +31,7 @@ class Nav extends React.Component {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand" href="/"><span className="dark-txt">T.Y.</span> Michael <span className="dark-txt">Chen</span></a>
+            <a className="navbar-brand" href="/"><span className="light-txt">T.Y.</span> Michael <span className="light-txt">Chen</span></a>
           </div>
           <div className="collapse navbar-collapse" id="navbar">
             <ul className="nav navbar-nav navbar-right">

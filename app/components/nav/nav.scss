@@ -6,7 +6,7 @@
     font-family: 'Source Serif Pro', serif;
     font-size: 25px;
     font-weight: 700;
-    color: $lightColor;
+    color: $mainColor;
     .light-txt {
       font-family: 'Source Serif Pro', serif;
     }
@@ -18,14 +18,14 @@
     margin:0 20px;
     text-transform: uppercase;
     a {
-      color: $darkColor;
+      color: $lightColor;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 900;
       cursor: pointer;
     }
     a:hover, a:focus {
       background: none;
-      color: $lightColor;
+      color: $mainColor;
     }
     .active {
       color: $mainColor;
