@@ -7,6 +7,9 @@ h1, h2, h3, h4, h5, h6, a, span, li {
 .light-txt {
   color: white; }
 
+.dark-txt {
+  color: #333333; }
+
 .serif-txt, .experience-container .text-box h1, .experience-container .experiences-box .experience-row h1 {
   font-family: 'Source Serif Pro', serif; }
 
@@ -89,6 +92,9 @@ h1, h2, h3, h4, h5, h6, a, span, li {
 .light-txt {
   color: white; }
 
+.dark-txt {
+  color: #333333; }
+
 .serif-txt, .home-container .text-box h1 {
   font-family: 'Source Serif Pro', serif; }
 
@@ -129,20 +135,44 @@ h1, h2, h3, h4, h5, h6, a, span, li {
         height: 30px; }
     .home-container .text-box .email-icon * {
       transform: translate(0px, 0.5px); }
-.navbar .navbar-brand {
-  font-family: 'Source Serif Pro', serif;
-  font-size: 25px;
-  font-weight: 700;
-  color: #333333; }
-  .navbar .navbar-brand .light-txt {
-    font-family: 'Source Serif Pro', serif; }
+.navbar {
+  transition: background-color 0.8s ease; }
+  .navbar .navbar-brand {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: white; }
+    .navbar .navbar-brand .light-txt {
+      font-family: 'Source Serif Pro', serif; }
+    .navbar .navbar-brand .dark-txt {
+      font-family: 'Source Serif Pro', serif; }
+  .navbar li {
+    margin: 0 20px;
+    text-transform: uppercase; }
+    .navbar li a {
+      color: #333333;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer; }
+    .navbar li a:hover, .navbar li a:focus {
+      background: none;
+      color: white; }
+    .navbar li .active {
+      color: #00BFA5;
+      cursor: default; }
 
-.navbar li {
-  margin: 0 20px; }
-  .navbar li a {
-    color: #333333;
-    font-size: 14px;
-    font-weight: 600; }
+.nav-other {
+  background-color: black;
+  transition: background-color 0.8s ease; }
+  .nav-other li a {
+    color: white; }
+  .nav-other li a:hover, .nav-other li a:focus {
+    background: none;
+    color: #00BFA5; }
+  .nav-other .navbar-brand {
+    color: #00BFA5; }
+    .nav-other .navbar-brand .dark-txt {
+      color: white; }
 body {
   width: 100%; }
 
@@ -151,6 +181,9 @@ h1, h2, h3, h4, h5, h6, a, span, li {
 
 .light-txt {
   color: white; }
+
+.dark-txt {
+  color: #333333; }
 
 .serif-txt, .project-container .overview-box h1, .project-container .project-row .text-box h1 {
   font-family: 'Source Serif Pro', serif; }
@@ -213,30 +246,22 @@ h1, h2, h3, h4, h5, h6, a, span, li {
       border: none; }
     .project-container .project-row .packhire-btn {
       background-color: #599ff1; }
-  .project-container .transition-row, .project-container .packhire-row, .project-container .seam-row, .project-container .data-row, .project-container .frontend-row, .project-container .twitter-row {
+  .project-container .transition-row, .project-container .braindump-row, .project-container .packhire-row, .project-container .seam-row, .project-container .data-row, .project-container .frontend-row, .project-container .twitter-row {
     cursor: pointer;
     -webkit-transition: background-color 300ms linear;
     -ms-transition: background-color 300ms linear;
     transition: background-color 300ms linear; }
+  .project-container .braindump-row {
+    background-color: #C04BAE; }
   .project-container .packhire-row {
-    background-color: rgba(74, 144, 226, 0.9); }
-  .project-container .packhire-row:hover {
     background-color: #4a90e2; }
   .project-container .seam-row {
-    background-color: rgba(40, 195, 105, 0.9); }
-  .project-container .seam-row:hover {
     background-color: #28c369; }
   .project-container .data-row {
-    background-color: rgba(30, 161, 218, 0.9); }
-  .project-container .data-row:hover {
     background-color: #1ea1da; }
   .project-container .frontend-row {
-    background-color: rgba(204, 38, 71, 0.9); }
-  .project-container .frontend-row:hover {
     background-color: #cc2647; }
   .project-container .twitter-row {
-    background-color: rgba(109, 180, 228, 0.9); }
-  .project-container .twitter-row:hover {
     background-color: #6db4e4; }
 body {
   width: 100%; }
@@ -246,6 +271,9 @@ h1, h2, h3, h4, h5, h6, a, span, li {
 
 .light-txt {
   color: white; }
+
+.dark-txt {
+  color: #333333; }
 
 .serif-txt, .footer-container .text-box h1 {
   font-family: 'Source Serif Pro', serif; }
@@ -284,8 +312,49 @@ h1, h2, h3, h4, h5, h6, a, span, li {
 .light-txt {
   color: white; }
 
+.dark-txt {
+  color: #333333; }
+
 .serif-txt {
   font-family: 'Source Serif Pro', serif; }
+.navbar {
+  transition: background-color 0.8s ease; }
+  .navbar .navbar-brand {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: white; }
+    .navbar .navbar-brand .light-txt {
+      font-family: 'Source Serif Pro', serif; }
+    .navbar .navbar-brand .dark-txt {
+      font-family: 'Source Serif Pro', serif; }
+  .navbar li {
+    margin: 0 20px;
+    text-transform: uppercase; }
+    .navbar li a {
+      color: #333333;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer; }
+    .navbar li a:hover, .navbar li a:focus {
+      background: none;
+      color: white; }
+    .navbar li .active {
+      color: #00BFA5;
+      cursor: default; }
+
+.nav-other {
+  background-color: black;
+  transition: background-color 0.8s ease; }
+  .nav-other li a {
+    color: white; }
+  .nav-other li a:hover, .nav-other li a:focus {
+    background: none;
+    color: #00BFA5; }
+  .nav-other .navbar-brand {
+    color: #00BFA5; }
+    .nav-other .navbar-brand .dark-txt {
+      color: white; }
 body {
   width: 100%; }
 
@@ -294,6 +363,9 @@ h1, h2, h3, h4, h5, h6, a, span, li {
 
 .light-txt {
   color: white; }
+
+.dark-txt {
+  color: #333333; }
 
 .serif-txt {
   font-family: 'Source Serif Pro', serif; }
