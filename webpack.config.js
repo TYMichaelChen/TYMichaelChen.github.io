@@ -12,6 +12,7 @@ var PORT = process.env.PORT || '3030';
 
 module.exports = {
   entry: __dirname + '/app/index.js',
+  devtool: 'source-map',
   module: {
     loaders: [
       {
