@@ -27,10 +27,10 @@ class Home extends React.Component {
               </div>
               <div className="col-xs-12">
                 <div className="social-box">
-                  <a href="http://www.github.com/miketychen" target="_blank"><span className="icon"><Github /></span></a>
-                  <a href="mailto:miketychen@gmail.com" target="_blank"><span className="icon email-icon"><Email /></span></a>
-                  <a href="http://www.linkedin.com/in/miketychen" target="_blank"><span className="icon"><LinkedIn /></span></a>
-                  <a href="http://www.linkedin.com/in/miketychen" target="_blank"><span className="icon"><Resume /></span></a>
+                  <a href="http://www.github.com/TYMichaelChen" target="_blank"><span className="icon"><Github /></span></a>
+                  <a href="mailto:tymichaelchen@gmail.com" target="_blank"><span className="icon email-icon"><Email /></span></a>
+                  <a href="http://www.linkedin.com/in/TYMichaelChen" target="_blank"><span className="icon"><LinkedIn /></span></a>
+                  <a href="http://www.tymichaelchen.com/TYMichaelChen_Resume.pdf" target="_blank"><span className="icon"><Resume /></span></a>
                 </div>
               </div>
               <div className="col-xs-12 down-box">
