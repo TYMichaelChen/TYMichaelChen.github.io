@@ -100,8 +100,8 @@ class Project extends React.Component {
         <div className="overview-box">
           <h1>MY PROJECTS</h1>
           <h2>
-            Outside of work, I like to explore different technology as well as creating applications to target pain points that I have felt or have been told.
-            Prior to graduation, I prusued a venture targeting job referrals within a company. We ended up raising around ~$20,000 in venture fund to pursue the
+            I like to explore different technology as well as create applications to target pain points that I have witnessed from past industry experience.
+            Near graduation, I prusued a venture targeting hiring within a company. We raised $20,000 in venture fund to pursue the
             idea of incentivizing hiring through internal referrals. My most recent project is Braindump, a mobile app written in Swift 4 that help people practice good mental hygiene.
           </h2>
         </div>
