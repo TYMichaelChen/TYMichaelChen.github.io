@@ -1,54 +1,64 @@
 @import '../../static/css/variables.scss';
 
 .experience-container {
-  background-color: $darkColor;
-  padding: 40px;
-  color: $lightColor;
-  .text-box {
-    width: 65%;
-    margin: 0 auto;
-    h1 {
-      @extend .serif-txt;
-      text-align: center;
-    }
-    h2 {
-      font-size: 16px;
-      line-height: 1.8;
-    }
-    .filter-title {
-      font-size: 700;
-      text-align: center;
+  margin: 0;
+  color: $darkColor;
+  .text-container {
+    width: 100%;
+    padding: 30px 10%;
+    background-color: $darkColor;
+    color: $lightColor;
+    margin: 0;
+    .text-box {
+      width: 100%;
+      margin: 0 auto;
+      h1 {
+        @extend .serif-txt;
+        text-align: center;
+      }
+      h2 {
+        font-size: 16px;
+        line-height: 1.8;
+      }
+      .filter-title {
+        font-size: 700;
+        text-align: center;
+      }
     }
   }
   .experiences-box {
-    width: 80%;
-    margin: 50px auto;
+    width: 100%;
+    padding: 40px 10%;
+    margin: 0 auto;
     .experience-row {
       .timeline {
-        .vertical-line {
-          background-color: $sysGray1;
-          height: 60px;
-          margin: -1px auto 0 auto;
-          width: 15px;
+        .vertical-box {
+          width: 100%;
+          .vertical-line {
+            background-color: $sysGray1;
+            height: 120px;
+            margin: -1px auto;
+            width: 5px;
+          }
         }
       }
       .img-box {
         background-color: $sysGray1;
         border-radius: 50%;
-        height: 190px;
-        margin: -1px auto 0 auto;
-        width: 190px;
+        height: 170px;
+        margin: -1px auto;
+        width: 170px;
         .img-bg {
           border-radius: 50%;
           width: 100%;
           height: 100%;
           margin: 1px auto;
-          border: 15px solid $sysGray1;
+          border: 5px solid $sysGray1;
           background: $lightColor;
         }
         .company-img {
           width: 140px;
-          margin: 0 auto 0 10px;
+          margin: 30px auto 0 10px;
         }
         .zanbato-img {
           @extend .company-img;
@@ -66,12 +76,12 @@
         .insights-img {
           @extend .company-img;
           width: 125px;
-          margin-top: 11%;
+          margin-top: 13%;
           margin-left: 18px;
         }
         .mdanderson-img {
           @extend .company-img;
-          margin-top: 34%;
+          margin-top: 37%;
         }
         .northwestern-img {
           @extend .company-img;
@@ -81,21 +91,25 @@
           margin-left: 7px;
         }
       }
+      .txt-box {
+        margin-top: -10px;
+      }
       h1 {
         @extend .serif-txt;
-        font-size: 25px;
+        font-size: 30px;
         line-height: 0.5;
       }
       h2 {
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 0.5;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
         text-transform: uppercase;
         color: $mainColor;
       }
       h3 {
-        font-size: 14px;
-        line-height: 1.5;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-top: 4px;
       }
     }
   }

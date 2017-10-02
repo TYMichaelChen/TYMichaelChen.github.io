@@ -1,7 +1,7 @@
 @import '../../static/css/variables.scss';
 
 .footer-container {
-  background-color: $mainColor;
+  background-color: $darkColor;
   padding: 30px 60px;
   .text-box {
     color: $lightColor;
@@ -23,10 +23,15 @@
     text-align: right;
     .icon {
       margin: 0 25px;
-      opacity: 0.5;
       * {
         width: 40px;
         height: 40px;
+        fill: $lightColor;
+      }
+    }
+    .icon:hover {
+      * {
+        fill: $mainColor;
       }
     }
     .email-icon * {

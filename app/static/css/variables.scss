@@ -25,6 +25,20 @@ $frontendColor: rgb(204, 38, 71);
 $dataColor: rgb(30, 161, 218);
 $twitterColor: rgb(109, 180, 228);
 
+$braindumpColor0: #C04BAE;
+$packhireColor0: rgba(74, 144, 226, 0);
+$seamColor0: rgba(40, 195, 105, 0);
+$frontendColor0: rgba(204, 38, 71, 0);
+$dataColor0: rgba(30, 161, 218, 0);
+$twitterColor0: rgba(109, 180, 228, 0);
+
+$braindumpColor3: #C04BAE;
+$packhireColor3: rgba(74, 144, 226, 0.3);
+$seamColor3: rgba(40, 195, 105, 0.3);
+$frontendColor3: rgba(204, 38, 71, 0.3);
+$dataColor3: rgba(30, 161, 218, 0.3);
+$twitterColor3: rgba(109, 180, 228, 0.3);
+
 $braindumpColor2: rgba(74, 144, 226, 0.9);
 $packhireColor2: rgba(89, 159, 241, 1);
 $seamColor2: rgba(40, 195, 105, 1);
@@ -33,12 +47,18 @@ $dataColor2: rgba(30, 161, 218, 1);
 $twitterColor2: rgba(109, 180, 228, 1);
 
 
-$javascript: rgb(240,221, 68);
-$ruby: rgb(102, 20, 19);
-$html: rgb(102, 20, 19);
-$css: rgb(102, 20, 19);
-$postgresql: rgb(102, 20, 19);
-$sass: rgb(102, 20, 19);
+$javascript: #FFB400;
+$ruby: #DD1C1A;
+$swift: #FFB400;
+$node: #2274A5;
+$mongodb: #32936F;
+$django: #9BC53D;
+$python: #1A936F;
+$java: #F6511D;
+$html5: #593C8F;
+$css3: #FFB400;
+$postgresql: #06AED5;
+$sass: #FF1654;
 
 
 $break-smaller:20em;

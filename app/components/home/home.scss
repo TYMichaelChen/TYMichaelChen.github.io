@@ -3,6 +3,7 @@
 .home-container {
   width:100%;
   height:100%;
+  overflow-x: hidden;
   .main-panel {
     padding: 65% 0;
     text-align: center;
@@ -30,7 +31,7 @@
     h2 {
       color: $mainColor;
       font-size: 25px;
-      font-weight: 600;
+      font-weight: 700;
       line-height: 1;
     }
     .social-box {
@@ -87,15 +88,12 @@
 @media (min-width:$break-med) {
   .home-container {
     .main-panel {
-      padding: 10.5% 0 10% 0;
+      padding: 12% 0 7% 0;
       h1 {
         font-size: 60px;
       }
       .down-box {
-        height: 180px;
-      }
-      .down-txt {
-        padding-top: 130px;
+        height: 60px;
       }
     }
   }
