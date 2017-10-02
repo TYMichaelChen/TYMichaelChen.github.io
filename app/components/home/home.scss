@@ -4,12 +4,15 @@
   width:100%;
   height:100%;
   overflow-x: hidden;
+  background-color: $darkColor;
   .main-panel {
     padding: 65% 0;
     text-align: center;
     width: 100%;
     height: 100%;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     opacity: 0.9;
     .profile-picture {
       border-radius: 50%;

@@ -34,7 +34,7 @@ class Home extends React.Component {
                 </div>
               </div>
               <div className="col-xs-12 down-box">
-                <Link to="experiences" spy={true} smooth={true} duration={1000}>
+                <Link to="projects" spy={true} smooth={true} duration={1000}>
                   <div className="down-txt move-down">
                     <span className="icon"><DownArrow /></span>
                   </div>

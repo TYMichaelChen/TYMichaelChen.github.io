@@ -34,11 +34,12 @@
       .timeline {
         .vertical-box {
           width: 100%;
+          display: none;
           .vertical-line {
             background-color: $sysGray1;
             height: 120px;
-            margin: -1px auto;
-            width: 5px;
+            margin: -5px auto;
+            width: 7px;
           }
         }
       }
@@ -46,19 +47,19 @@
         background-color: $sysGray1;
         border-radius: 50%;
         height: 170px;
-        margin: -1px auto;
+        margin: 40px auto;
         width: 170px;
         .img-bg {
           border-radius: 50%;
           width: 100%;
           height: 100%;
           margin: 1px auto;
-          border: 5px solid $sysGray1;
+          border: 7px solid $sysGray1;
           background: $lightColor;
         }
         .company-img {
-          width: 140px;
-          margin: 30px auto 0 10px;
+          width: 138px;
+          margin: 30px auto 0 9px;
         }
         .zanbato-img {
           @extend .company-img;
@@ -71,13 +72,13 @@
         .healthengine-img {
           width: 110px;
           height: 110px;
-          margin: 14% auto auto 26px;
+          margin: 14% auto auto 23px;
         }
         .insights-img {
           @extend .company-img;
           width: 125px;
-          margin-top: 13%;
-          margin-left: 18px;
+          margin-top: 11.5%;
+          margin-left: 17px;
         }
         .mdanderson-img {
           @extend .company-img;
@@ -92,24 +93,54 @@
         }
       }
       .txt-box {
-        margin-top: -10px;
+        margin-top: 20px;
       }
       h1 {
         @extend .serif-txt;
-        font-size: 30px;
-        line-height: 0.5;
+        font-size: 25px;
+        line-height: 1.2;
+        text-align: center;
       }
       h2 {
-        font-size: 20px;
-        font-weight: 700;
+        font-size: 16px;
+        font-weight: 500;
         line-height: 1.2;
         text-transform: uppercase;
         color: $mainColor;
+        text-align: center;
       }
       h3 {
         font-size: 16px;
         line-height: 1.6;
         margin-top: 4px;
+      }
+    }
+  }
+}
+@media (min-width:$break-lg) {
+  .experience-container {
+    .experiences-box {
+      .experience-row {
+        .timeline {
+          .vertical-box {
+            display: inline-block;
+          }
+        }
+        .img-box {
+          margin: -1px auto;
+        }
+        .txt-box {
+          margin-top: -10px;
+        }
+        h1 {
+          line-height: 0.5;
+          text-align: left;
+        font-size: 30px;
+        }
+        h2 {
+          font-size: 20px;
+          text-align: left;
+        }
       }
     }
   }

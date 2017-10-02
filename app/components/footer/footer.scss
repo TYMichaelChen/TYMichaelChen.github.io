@@ -7,7 +7,7 @@
     color: $lightColor;
     h1 {
       @extend .serif-txt;
-      font-size: 45px;
+      font-size: 30px;
       font-weight: 600;
       line-height: 0.6;
       text-transform: uppercase;
@@ -15,14 +15,14 @@
     h2 {
       font-size: 16px;
       font-weight: 300;
-      line-height: 0.6;
+      line-height: 1.2;
     }
   }
   .social-box {
     margin-top: 28px;
-    text-align: right;
+    text-align: center;
     .icon {
-      margin: 0 25px;
+      margin: 0 15px;
       * {
         width: 40px;
         height: 40px;
@@ -36,6 +36,39 @@
     }
     .email-icon * {
       transform: translate(0px, 0.5px);
+    }
+  }
+}
+@media (min-width:$break-med) {
+  .footer-container {
+    .text-box {
+      h1 {
+        font-size: 45px;
+      }
+      h2 {
+        line-height: 0.6;
+      }
+    }
+    .social-box {
+      text-align: left;
+    }
+  }
+}
+@media (min-width:$break-lg) {
+  .footer-container {
+    .text-box {
+      h1 {
+        font-size: 45px;
+      }
+      h2 {
+        line-height: 0.6;
+      }
+    }
+    .social-box {
+      text-align: right;
+      .icon {
+        margin: 0 25px;
+      }
     }
   }
 }

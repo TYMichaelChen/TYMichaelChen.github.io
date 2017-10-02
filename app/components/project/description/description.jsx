@@ -3,6 +3,7 @@ import './description.scss';
 import _ from 'lodash';
 import Projects from './projects.json';
 import DescriptionNav from './description-nav.jsx';
+import { LeftArrow } from '../../../static/js/svgs.js';
 
 
 class Description extends React.Component {
@@ -169,7 +170,10 @@ class Description extends React.Component {
   get backLink() {
     const project = this.props.project;
     return (
-        <a style={{color:project.color}} href="/#projects">Back to Other Projects</a>
+      <a style={{color:project.color}} href="/#projects">
+        <span className="back"><LeftArrow/></span>
+        <span className="back-txt">Back to Other Projects</span>
+      </a>
     );
   }
   get links() {

@@ -1,12 +1,20 @@
 @import "../../static/css/variables.scss";
 
 .navbar {
+  height: 50px;
+  margin: 0;
   transition: background-color 0.8s ease;
+  background: transparent;
+  border: none;
+  .container {
+    width: 90%;
+  }
   .navbar-brand {
     font-family: 'Source Serif Pro', serif;
     font-size: 25px;
     font-weight: 700;
     color: $mainColor;
+    cursor: pointer;
     .light-txt {
       font-family: 'Source Serif Pro', serif;
     }
@@ -14,41 +22,52 @@
       font-family: 'Source Serif Pro', serif;
     }
   }
-  li {
-    margin:0 20px;
-    text-transform: uppercase;
-    a {
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: $mainColor;
+}
+.navbar-default .navbar-nav > li > a {
+  cursor: pointer;
+  color: $lightColor;
+  font-size: 14px;
+  font-weight: 900;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: $mainColor;
+}
+.navbar-default .navbar-toggle {
+  border-color: $mainColor;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: $lightColor;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $mainColor;
+}
+.in {
+  background-color: $darkColor;
+  transition: none;
+}
+.navbar-collapse {
+  ul {
+    li {
+      margin:0 20px;
+      text-transform: uppercase;
       color: $lightColor;
-      font-size: 14px;
-      font-weight: 900;
-      cursor: pointer;
-    }
-    a:hover, a:focus {
-      background: none;
-      color: $mainColor;
-    }
-    .active {
-      color: $mainColor;
-      cursor: default;
+      a {
+        color: $lightColor;
+        font-size: 14px;
+        font-weight: 900;
+        cursor: pointer;
+      }
+      .active {
+        color: $mainColor;
+        cursor: default;
+      }
     }
   }
 }
 .nav-other {
   background-color: $sysBlack;
   transition: background-color 0.8s ease;
-  li {
-    a {
-      color: $sysWhite;
-    }
-    a:hover, a:focus {
-      background: none;
-      color: $mainColor;
-    }
-  }
-  .navbar-brand {
-    color: $mainColor;
-    .dark-txt {
-      color: $lightColor;
-    }
-  }
 }
