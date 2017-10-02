@@ -115,10 +115,11 @@ class Experience extends React.Component {
           <div className="text-box">
             <h1>ABOUT ME</h1>
             <h2>
-              Im a software engineer working at Zanbato, creating a stock exchange for private markets (the first of its kind
-              Alternative Trading System). I graduated from Northwestern University in 2015 studying Biological Sciences and Computer Science.
-              During my time at Northwestern, I led EPIC, the entrepreneurship student group, and created programs such as
-              WildHacks, an intercollegiate hackathon, and Project Pitch, an entrepreneurship development program.
+              My name is Michael Chen. I am a recent graduate of Northwestern University where I studied Biological Sciences and Computer Science. At Northwestern, I
+              led EPIC, the entrepreneurship student group. I led a group of 40 students to create programs like Project Pitch (an entrepreneurship development program)
+              and WildHacks (an intercollegiate hackathon).<br/><br/>Post graduation, I worked at IBM Design as a software engineer and product designer working on creating a data science
+              solutions for IBM. <br/><br/>Most recently, I moved to San Francisco to join Zanbato, a finanical technology startup as a core engineer creating a stock exchange for private
+              companies. My professional interests include finance, big data, and the intersection of medicine and technology.
             </h2>
           </div>
         </div>

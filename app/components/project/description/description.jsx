@@ -171,7 +171,6 @@ class Description extends React.Component {
     const project = this.props.project;
     return (
       <a style={{color:project.color}} href="/#projects">
-        <span className="back"><LeftArrow/></span>
         <span className="back-txt">Back to Other Projects</span>
       </a>
     );

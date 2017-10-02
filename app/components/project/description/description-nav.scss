@@ -1,1 +1,36 @@
 @import "../../nav/nav.scss";
+
+@media (min-width:$break-med) {
+  .navbar {
+    .container {
+      width: 100%;
+      .navbar-brand {
+        font-size: 19px;
+      }
+    }
+  }
+  .navbar-default .navbar-nav > li > a {
+    font-size: 13px;
+  }
+  .navbar-collapse ul li {
+    margin:0 2px;
+  }
+}
+
+@media (min-width:$break-lg) {
+  .navbar {
+    .container {
+      width: 95%;
+      .navbar-brand {
+        font-size: 25px;
+      }
+    }
+  }
+  .navbar-collapse {
+    ul {
+      li {
+        margin:0 20px;
+      }
+    }
+  }
+}

@@ -100,10 +100,9 @@ class Project extends React.Component {
         <div className="overview-box">
           <h1>MY PROJECTS</h1>
           <h2>
-            Im a software engineer working at Zanbato, creating a stock exchange for private markets (the first of its kind
-            Alternative Trading System). I graduated from Northwestern University in 2015 studying Biological Sciences and Computer Science.
-            During my time at Northwestern, I led EPIC, the entrepreneurship student group, and created programs such as
-            WildHacks, an intercollegiate hackathon, and Project Pitch, an entrepreneurship development program.
+            Outside of work, I like to explore different technology as well as creating applications to target pain points that I have felt or have been told.
+            Prior to graduation, I prusued a venture targeting job referrals within a company. We ended up raising around ~$20,000 in venture fund to pursue the
+            idea of incentivizing hiring through internal referrals. My most recent project is Braindump, a mobile app written in Swift 4 that help people practice good mental hygiene.
           </h2>
         </div>
         {this.projectsComponent}
