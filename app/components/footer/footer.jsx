@@ -13,10 +13,10 @@ class Footer extends React.Component {
             <h2>If you’d like to see more of what I’ve been up to reach out!</h2>
           </div>
           <div className="col-md-6 social-box">
-            <a href="http://www.github.com/miketychen" target="_blank"><span className="icon"><Github /></span></a>
-            <a href="mailto:miketychen@gmail.com" target="_blank"><span className="icon email-icon"><Email /></span></a>
-            <a href="http://www.linkedin.com/in/miketychen" target="_blank"><span className="icon"><LinkedIn /></span></a>
-            <a href="http://www.linkedin.com/in/miketychen" target="_blank"><span className="icon"><Resume /></span></a>
+            <a href="http://www.github.com/TYMichaelChen" target="_blank"><span className="icon"><Github /></span></a>
+            <a href="mailto:TYMichaelChen@gmail.com" target="_blank"><span className="icon email-icon"><Email /></span></a>
+            <a href="http://www.linkedin.com/in/TYMichaelChen" target="_blank"><span className="icon"><LinkedIn /></span></a>
+            <a href="http://www.tymichaelchen.com/TYMichaelChen_Resume.pdf" target="_blank"><span className="icon"><Resume /></span></a>
           </div>
         </div>
       </div>

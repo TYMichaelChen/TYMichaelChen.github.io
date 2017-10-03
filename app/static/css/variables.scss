@@ -5,6 +5,7 @@ $sysGray1: rgb(80, 80, 80);
 $sysWhite: rgb(255, 255, 255);
 $sysBlack: rgb(0, 0, 0);
 $oldGreen: rgb(30,185,84);
+$sysGray2: #D8D8D8;
 
 $mainColor: $oldGreen;
 $mainColor1: $sysGreen1;
@@ -25,14 +26,14 @@ $frontendColor: rgb(204, 38, 71);
 $dataColor: rgb(30, 161, 218);
 $twitterColor: rgb(109, 180, 228);
 
-$braindumpColor0: #C04BAE;
+$braindumpColor0: rgba(192,75,174, 0);
 $packhireColor0: rgba(74, 144, 226, 0);
 $seamColor0: rgba(40, 195, 105, 0);
 $frontendColor0: rgba(204, 38, 71, 0);
 $dataColor0: rgba(30, 161, 218, 0);
 $twitterColor0: rgba(109, 180, 228, 0);
 
-$braindumpColor3: #C04BAE;
+$braindumpColor3: rgba(192,75,174, 0.3);
 $packhireColor3: rgba(74, 144, 226, 0.3);
 $seamColor3: rgba(40, 195, 105, 0.3);
 $frontendColor3: rgba(204, 38, 71, 0.3);

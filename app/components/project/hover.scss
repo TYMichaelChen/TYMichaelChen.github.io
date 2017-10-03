@@ -12,7 +12,9 @@
 .project-card:hover {
   box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8);
 }
-
+figure.braindump-bg figcaption::before {
+  background: linear-gradient(to bottom, $braindumpColor0 0%, $braindumpColor3 50%);
+}
 figure.seam-bg figcaption::before {
   background: linear-gradient(to bottom, $seamColor0 0%, $seamColor3 75%);
 }

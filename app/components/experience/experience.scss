@@ -36,7 +36,7 @@
           width: 100%;
           display: none;
           .vertical-line {
-            background-color: $sysGray1;
+            background-color: $sysGray2;
             height: 75px;
             margin: -5px auto;
             width: 7px;
@@ -54,20 +54,22 @@
           width: 100%;
           height: 100%;
           margin: 1px auto;
-          border: 7px solid $sysGray1;
+          border: 7px solid $sysGray2;
           background: $lightColor;
         }
         .company-img {
-          width: 138px;
+          width: 135px;
           margin: 30px auto 0 9px;
         }
         .zanbato-img {
           @extend .company-img;
+          width: 138px;
           margin-top: 28%;
         }
         .ibm-img {
           @extend .company-img;
           margin-top: 18%;
+          margin-left: 11px;
         }
         .healthengine-img {
           width: 110px;
@@ -76,7 +78,7 @@
         }
         .insights-img {
           @extend .company-img;
-          width: 125px;
+          width: 120px;
           margin-top: 11.5%;
           margin-left: 17px;
         }
