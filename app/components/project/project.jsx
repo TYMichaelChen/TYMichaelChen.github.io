@@ -97,13 +97,9 @@ class Project extends React.Component {
   render() {
     return (
       <div id="projects" className="project-container">
-        <div className="overview-box">
-          <h1>MY PROJECTS</h1>
-          <h2>
-            I like to explore different technology as well as create applications targeting inefficiencies from my past industry experience.
-            Near graduation, I pursued a venture targeting company hiring. We raised $10,000 in venture fund to pursue the
-            idea of incentivizing hiring through internal referrals. My most recent project is Braindump, a mobile app written in Swift 4 that help people practice good mental hygiene.
-          </h2>
+        <div className="page-title-box">
+          <h1>PROJECTS</h1>
+          <h2>My latest engineering venture projects</h2>
         </div>
         {this.projectsComponent}
       </div>

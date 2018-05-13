@@ -1,0 +1,68 @@
+@import '../../static/css/variables.scss';
+
+.about-container {
+  background-color: $sysGray5;
+  overflow: hidden;
+  padding-top: 40px;
+  .about-box {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    .img-box {
+      width: 100%;
+      .bio-img {
+        width: 100%;
+      }
+    }
+    .bio-box {
+      width: 95%;
+      margin: 0 auto;
+      text-align: left;
+      .txt-box {
+        h4, a {
+          line-height: 1.8;
+          font-size: 18px;
+          font-weight: 300;
+        }
+        a {
+          color: $mainColor;
+          font-size: 20px;
+          font-weight: 500;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:$break-smaller) {
+  .about-container {
+    .about-box {
+      width: 98%;
+      .bio-box {
+        .txt-box {
+          h4 {
+            font-size: 17px;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:$break-xlg2) {
+  .about-container {
+    .about-box {
+      width: 80%;
+      .bio-box {
+        .txt-box {
+          h4 {
+            font-size: 18px;
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+  }
+}

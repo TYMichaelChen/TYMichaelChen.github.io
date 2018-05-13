@@ -2,6 +2,9 @@ $sysGreen: #00BFA5;
 $sysGreen1: rgba(0, 191, 165, 0.7);
 $sysGray: #333333;
 $sysGray1: rgb(80, 80, 80);
+$sysGray3: rgb(220, 220, 220);
+$sysGray4: rgb(200, 200, 200);
+$sysGray5: rgb(240, 240, 240);
 $sysWhite: rgb(255, 255, 255);
 $sysBlack: rgb(0, 0, 0);
 $oldGreen: rgb(30,185,84);
@@ -67,6 +70,7 @@ $break-small:23em;
 $break-med:40.063em;
 $break-lg:64.063em;
 $break-xlg:80.063em;
+$break-xlg2:90.063em;
 
 .light-txt {
   color: $lightColor;

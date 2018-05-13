@@ -2,33 +2,11 @@
 
 .experience-container {
   margin: 0;
+  padding: 40px 0;
   color: $darkColor;
-  .text-container {
-    width: 100%;
-    padding: 30px 10%;
-    background-color: $darkColor;
-    color: $lightColor;
-    margin: 0;
-    .text-box {
-      width: 100%;
-      margin: 0 auto;
-      h1 {
-        @extend .serif-txt;
-        text-align: center;
-      }
-      h2 {
-        font-size: 16px;
-        line-height: 1.8;
-      }
-      .filter-title {
-        font-size: 700;
-        text-align: center;
-      }
-    }
-  }
   .experiences-box {
     width: 100%;
-    padding: 40px 10%;
+    padding: 40px 8% 0 8%;
     margin: 0 auto;
     .experience-row {
       .timeline {
@@ -36,35 +14,38 @@
           width: 100%;
           display: none;
           .vertical-line {
-            background-color: $sysGray2;
-            height: 75px;
-            margin: -5px auto;
-            width: 7px;
+            background-color: $sysGray3;
+            height: 70px;
+            margin: -2px auto;
+            width: 6px;
           }
         }
       }
       .img-box {
         background-color: $sysGray1;
         border-radius: 50%;
-        height: 170px;
+        height: 160px;
         margin: 40px auto;
-        width: 170px;
+        width: 160px;
         .img-bg {
           border-radius: 50%;
           width: 100%;
           height: 100%;
           margin: 1px auto;
-          border: 7px solid $sysGray2;
+          border: 7px solid $sysGray3;
           background: $lightColor;
         }
         .company-img {
-          width: 135px;
+          width: 125px;
           margin: 30px auto 0 9px;
+        }
+        .zanbato-img-bg {
+          background-color: #1d2634;
         }
         .zanbato-img {
           @extend .company-img;
-          width: 138px;
-          margin-top: 28%;
+          margin: 15%;
+          width: 100px;
         }
         .ibm-img {
           @extend .company-img;
@@ -72,19 +53,20 @@
           margin-left: 11px;
         }
         .healthengine-img {
-          width: 110px;
-          height: 110px;
+          width: 100px;
+          height: 100px;
           margin: 14% auto auto 23px;
         }
         .insights-img {
           @extend .company-img;
-          width: 120px;
-          margin-top: 11.5%;
+          width: 115px;
+          margin-top: 11%;
           margin-left: 17px;
         }
         .mdanderson-img {
           @extend .company-img;
-          margin-top: 37%;
+          margin-left: 8%;
+          margin-top: 36%;
         }
         .northwestern-img {
           @extend .company-img;
@@ -97,18 +79,20 @@
       .txt-box {
         margin-top: 20px;
       }
+      .txt-box-odd {
+        text-align: right;
+      }
       h1 {
-        @extend .serif-txt;
-        font-size: 25px;
+        font-size: 20px;
+        font-weight: 700;
         line-height: 1.2;
         text-align: center;
+        color: $mainColor;
       }
       h2 {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.2;
-        text-transform: uppercase;
-        color: $mainColor;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.3;
         text-align: center;
       }
       h3 {
@@ -122,6 +106,7 @@
 @media (min-width:$break-lg) {
   .experience-container {
     .experiences-box {
+      width: 100%;
       .experience-row {
         .timeline {
           .vertical-box {
@@ -129,21 +114,38 @@
           }
         }
         .img-box {
-          margin: -1px auto;
+          margin: -5px -4px;
         }
         .txt-box {
           margin-top: -10px;
+          min-height: 100px;
+        }
+        .txt-box-odd {
+          h1, h2, h3 {
+            text-align: right;
+          }
+        }
+        .txt-box-even {
+          h1, h2, h3 {
+            text-align: left;
+          }
         }
         h1 {
           line-height: 0.5;
-          text-align: left;
-        font-size: 30px;
+          font-size: 22px;
         }
         h2 {
-          font-size: 20px;
-          text-align: left;
+          font-size: 18px;
+          line-height: 1.2;
         }
       }
+    }
+  }
+}
+@media (min-width:$break-xlg) {
+  .experience-container {
+    .experiences-box {
+      width: 75%;
     }
   }
 }

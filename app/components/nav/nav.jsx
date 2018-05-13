@@ -43,7 +43,10 @@ class Navs extends React.Component {
               <Link onClick={this.closeNav} activeClass="active" to="projects" spy={true} smooth={true} duration={1000}>PROJECTS</Link>
             </li>
             <li>
-              <Link onClick={this.closeNav} activeClass="active" to="experiences" spy={true} smooth={true} duration={1000}>ABOUT</Link>
+              <Link onClick={this.closeNav} activeClass="active" to="experiences" spy={true} smooth={true} duration={1000}>EXPERIENCE</Link>
+            </li>
+            <li>
+              <Link onClick={this.closeNav} activeClass="active" to="about" spy={true} smooth={true} duration={1000}>ABOUT</Link>
             </li>
           </ul>
         </Navbar.Collapse>
