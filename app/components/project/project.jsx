@@ -2,7 +2,7 @@ import React from 'react';
 import './project.scss';
 
 // Project Images
-import Braindump from '../../static/images/projects/brain.png';
+import BrainHub from '../../static/images/projects/brain.png';
 import Packhire from '../../static/images/projects/packhire.jpg';
 import SEAM from '../../static/images/projects/seam.jpg';
 import Twitter from '../../static/images/projects/twitter.jpg';
@@ -14,12 +14,12 @@ class Project extends React.Component {
   get projects() {
     return [
       {
-        name: "Braindump",
+        name: "BrainHub",
         role: "Software Engineer (Full Stack)",
         technology: ['Swift', 'Django', 'PostgreSQL'],
         technologyClasses: ['Swift', 'Django', 'PostgreSQL'],
-        image: Braindump,
-        className: 'braindump',
+        image: BrainHub,
+        className: 'brainhub',
       },
       {
         name: "PackHire",

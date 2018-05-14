@@ -58,7 +58,7 @@
       height: 50px;
       cursor: pointer;
       .icon {
-        margin: 0 10px;
+        margin: 0 5px;
         fill: $lightColor;
         * {
           width: 30px;
@@ -71,10 +71,10 @@
     }
     @keyframes moveD {
       0%,100%{
-        margin-top: 100px;
+        margin-top: 60px;
       }
       50%{
-        margin-top: 50px;
+        margin-top: 10px;
       }
     }
   }

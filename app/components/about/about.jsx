@@ -24,9 +24,11 @@ class About extends React.Component {
                     Since then, I decided to turn down my medical school offer to pursue software engineering. I am deeply passionate about
                     the intersection of software and medicine. I currently work at Zanbato, creating the first alternative trading system
                     to trade shares in pre-IPO companies. Please reach out if you would like to know more about what I am up to or would like
-                    to collaborate. Looking forward build great products together!
+                    to collaborate. I look forward build great products together!
                   </h4>
-                  <a href="http://www.tymichaelchen.com/TYMichaelChen_Resume.pdf" target="_blank">View Resume</a>
+                  <div className="resume-box">
+                    <a href="http://www.tymichaelchen.com/TYMichaelChen_Resume.pdf" target="_blank">View Resume</a>
+                  </div>
                 </div>
             </div>
           </div>

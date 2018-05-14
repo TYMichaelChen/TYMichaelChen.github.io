@@ -1,15 +1,15 @@
 {
-  "braindump" : {
-      "name": "Braindump",
-      "description": "Braindump is a mobile application that help people practice good mental hygiene. As life continue to become more complex, we believe will become a necessity. We aim to improve your brain function and prevent burnout in just a few minutes everyday. Neuroscience has shown that by using simple techniques people can change the structure and function of their brain. Braindump uses these techniques to help founders maintain their focus, while handling the demands of being a founder.",
-      "link": "http://www.braindumpapp.com",
+  "brainhub" : {
+      "name": "BrainHub",
+      "description": "BrainHub is a mobile application that help people practice good mental hygiene. As life continue to become more complex, we believe will become a necessity. We aim to improve your brain function and prevent burnout in just a few minutes everyday. Neuroscience has shown that by using simple techniques people can change the structure and function of their brain. BrainHub uses these techniques to help founders maintain their focus, while handling the demands of being a founder.",
+      "link": "http://www.brainhubapp.com",
       "color": "#FF3D7B",
       "mainPicture": "images/projects/brain/brain-0.png",
       "howItWorks": [
         {
           "name": "ONE THOUGHT, ONE ENTRY. SIMPLE AS THAT.",
           "picture": "images/projects/brain/brain-1.png",
-          "description": "Every entry into Braindump represents a single thought, idea, decision, or piece of information you don't want to forget (but don't want to constantly remember either). In addition to the text, you can enhance the information contained in each entry by adding time triggers, amounts, social mentions, and more."
+          "description": "Every entry into BrainHub represents a single thought, idea, decision, or piece of information you don't want to forget (but don't want to constantly remember either). In addition to the text, you can enhance the information contained in each entry by adding time triggers, amounts, social mentions, and more."
         },
         {
           "name": "STAYING ORGANIZED HAS NEVER BEEN EASIER.",
@@ -24,15 +24,15 @@
         {
           "name": "YOU MIGHT EVEN HAVE A LITTLE FUN!",
           "picture": "images/projects/brain/brain-4.png",
-          "description": "Braindump uses emoji as signifiers for your entries, pick your favorites! Use them and all the elements to create the system that works for you. Mental hygiene is important is important but that doesn't mean it can't be fun!"
+          "description": "BrainHub uses emoji as signifiers for your entries, pick your favorites! Use them and all the elements to create the system that works for you. Mental hygiene is important is important but that doesn't mean it can't be fun!"
         }
       ],
       "technology": {
-        "Braindump": [
+        "BrainHub": [
           "Mobile: Swift 4",
           "Back-End: Django"
         ],
-        "description": "At the core, Braindump is centered around the content and the quickly offloading your thoughts and organizing complex thoughts for the users. With that in mind, I have architected a scalable system that is built for speed, mobility and instant information retrieval. We envision this app being built for various uses, so the backend database and systems have to be as flexible as possible. I built this using Swift 4 for the iOS app, Django for the backend server, and PostgreSQL for the database."
+        "description": "At the core, BrainHub is centered around the content and the quickly offloading your thoughts and organizing complex thoughts for the users. With that in mind, I have architected a scalable system that is built for speed, mobility and instant information retrieval. We envision this app being built for various uses, so the backend database and systems have to be as flexible as possible. I built this using Swift 4 for the iOS app, Django for the backend server, and PostgreSQL for the database."
       },
       "techPictures": [
         "images/projects/brain/brain-7.png",
@@ -41,7 +41,7 @@
       ],
       "design": {
         "name": "Design",
-        "description": "Because Braindump is all about the content that you put into it, the designs reflect that. When viewing your stream (left) you can scoll back and forwards in time. You can drag to reorder, tap the emoji to mark the entry as done/undone, and tap the content to edit. The tag view (right) is an easy way to track goals, projects, lists, or even emotions. Tapping into a tag will show you all the entries associated with it."
+        "description": "Because BrainHub is all about the content that you put into it, the designs reflect that. When viewing your stream (left) you can scoll back and forwards in time. You can drag to reorder, tap the emoji to mark the entry as done/undone, and tap the content to edit. The tag view (right) is an easy way to track goals, projects, lists, or even emotions. Tapping into a tag will show you all the entries associated with it."
       },
       "designPictures": [
         "images/projects/brain/brain-5.png",

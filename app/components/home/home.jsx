@@ -33,13 +33,13 @@ class Home extends React.Component {
                   <a href="http://www.tymichaelchen.com/TYMichaelChen_Resume.pdf" target="_blank"><span className="icon"><Resume /></span></a>
                 </div>
               </div>
-              <div className="col-xs-12 down-box">
-                <Link to="projects" spy={true} smooth={true} duration={1000}>
-                  <div className="down-txt move-down">
-                    <span className="icon"><DownArrow /></span>
-                  </div>
-                </Link>
-              </div>
+              <Link to="projects" spy={true} smooth={true} duration={1000}>
+                <div className="col-xs-12 down-box">
+                    <div className="down-txt move-down">
+                      <span className="icon"><DownArrow /></span>
+                    </div>
+                </div>
+              </Link>
             </div>
         </div>
       </div>

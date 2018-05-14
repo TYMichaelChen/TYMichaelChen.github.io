@@ -147,7 +147,15 @@
 @media (min-width:$break-xlg) {
   .project-container {
     .list-container {
-      padding: 10px 12%;
+      padding: 10px 5%;
+    }
+  }
+}
+
+@media (min-width:$break-xlg2) {
+  .project-container {
+    .list-container {
+      padding: 10px 10%;
     }
   }
 }
