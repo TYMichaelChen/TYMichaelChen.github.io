@@ -7,9 +7,9 @@
     color: $lightColor;
     h1 {
       @extend .serif-txt;
-      font-size: 30px;
+      font-size: 25px;
       font-weight: 600;
-      line-height: 0.6;
+      line-height: 1.2;
       text-transform: uppercase;
     }
     h2 {
@@ -24,8 +24,8 @@
     .icon {
       margin: 0 15px;
       * {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         fill: $lightColor;
       }
     }
@@ -39,6 +39,13 @@
     }
   }
 }
+@media (min-width:$break-small) {
+  .footer-container {
+    .social-box {
+      text-align: left;
+    }
+  }
+}
 @media (min-width:$break-med) {
   .footer-container {
     .text-box {
@@ -48,9 +55,6 @@
       h2 {
         line-height: 0.6;
       }
-    }
-    .social-box {
-      text-align: left;
     }
   }
 }

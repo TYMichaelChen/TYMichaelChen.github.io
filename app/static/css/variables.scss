@@ -65,12 +65,13 @@ $postgresql: #06AED5;
 $sass: #FF1654;
 
 
-$break-smaller:20em;
-$break-small:23em;
-$break-med:40.063em;
-$break-lg:64.063em;
-$break-xlg:80.063em;
-$break-xlg2:90.063em;
+$break-smaller: 20em;
+$break-small: 23em;
+$break-med: 990px;
+$break-med2: 1100px;
+$break-lg: 64.063em;
+$break-xlg: 80.063em;
+$break-xlg2: 105.063em;
 
 .light-txt {
   color: $lightColor;

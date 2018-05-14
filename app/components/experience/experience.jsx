@@ -87,8 +87,18 @@ class Experience extends React.Component {
       );
       return (
         <div className="row experience-row" key={experience.company}>
+          <div className="hidden-md hidden-lg col-sm-12 timeline">
+            <div className="img-box">
+              <a href={`https://${experience.website}`} target="_blank">
+                <div className={`img-bg ${experience.imgClass}-img-bg`}>
+                <img className={`${experience.imgClass}-img`} src={experience.image} />
+              </div>
+              </a>
+            </div>
+            {verticalLine}
+          </div>
           {evenOdd ? empty : info}
-          <div className="col-md-2 timeline">
+          <div className="hidden-xs hidden-sm col-md-2 timeline">
             <div className="img-box">
               <a href={`https://${experience.website}`} target="_blank">
                 <div className={`img-bg ${experience.imgClass}-img-bg`}>

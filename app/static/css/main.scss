@@ -17,7 +17,7 @@ a:hover {
 .page-title-box {
   margin: 0 auto;
   text-align: center;
-  width: 100%;
+  width: 90%;
   h1 {
     color: $mainColor;
     font-weight: 700;
@@ -26,5 +26,10 @@ a:hover {
   h2 {
     color: $sysBlack;
     font-size: 18px;
+  }
+}
+@media (min-width:$break-med) {
+  .page-title-box {
+    width: 100%;
   }
 }
