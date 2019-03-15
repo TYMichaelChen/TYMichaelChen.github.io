@@ -19,7 +19,7 @@ class About extends React.Component {
               <div className="bio-box">
                 <div className="txt-box">
                   <h4>
-                    I am a software engineer currently living in San Francisco. I studied Biological Science and Computer Science at Northwestern University.
+                    I am a software engineer working at Google in San Francisco. I studied Biological Science and Computer Science at Northwestern University.
                     I fell in love with creating software at Northwestern when I was leading EPIC, an entrepreneurship student organization.
                     Since then, I decided to turn down my medical school offer to pursue software engineering. I am deeply passionate about
                     the intersection of software and medicine. I currently work at Zanbato, creating the first alternative trading system

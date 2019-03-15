@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import Google from '../../static/images/google.png';
 import Zanbato from '../../static/images/zanbato.png';
 import IBM from '../../static/images/ibm.png';
 import HealthEngine from '../../static/images/healthengine.png';
@@ -13,8 +14,16 @@ class Experience extends React.Component {
   get experiences() {
     return [
       {
+        company: "Google",
+        title: "Software Engineer (August 2018 - Present)",
+        descriptions: ["Working on Google Hire as a backend engineer."],
+        website: "hire.google.com",
+        image: Google,
+        imgClass: 'google',
+      },
+      {
         company: "ZANBATO",
-        title: "Software Engineer (June 2016 - Present)",
+        title: "Software Engineer (June 2016 - June 2018)",
         descriptions: ["Creating the first alternative trading system for trading shares in pre-IPO companies."],
         website: "www.zanbato.com",
         image: Zanbato,
